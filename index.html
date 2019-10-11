@@ -1,0 +1,1313 @@
+    <!doctype html>
+<html lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="gtag/js_id_UA-112286258-1.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-112286258-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Are you wondering what&#039;s new – or what&#039;s best – on Netflix? Flixable is a Netflix search engine that offers a complete, searchable and browsable list of all the movies and TV shows that are currently streaming on Netflix in the U.S.">
+    <meta property="fb:app_id" content="1606326079643623">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="List of Movies and TV Shows on Netflix | Flixable">
+    <meta property="og:description" content="Are you wondering what&#039;s new – or what&#039;s best – on Netflix? Flixable is a Netflix search engine that offers a complete, searchable and browsable list of all the movies and TV shows that are currently streaming on Netflix in the U.S.">
+    <meta property="og:url" content="https://flixable.com/">
+    <meta property="og:image" content="http://flixable.com/images/logo-500px.png">
+    <link rel="icon" href="favicon.png">
+    <title>List of Movies and TV Shows on Netflix | Flixable</title>
+    <link rel="stylesheet" href="bootstrap/4-3-1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="rfs.min.css">
+    <link rel="stylesheet" href="ajax/libs/bootstrap-slider/10-0-0/css/bootstrap-slider.css">
+    <link rel="stylesheet" href="releases/v5-6-1/css/all.css">
+        <link href="style.css" rel="stylesheet">
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1706392859389035');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="tr_id_1706392859389035_ev_PageView_noscript_1.gif"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+      </head>
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id){
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=1606326079643623';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Sign In</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 mb-3 text-center">
+                <a href="https://www.facebook.com/v3.2/dialog/oauth?client_id=324240451429392&state=9803a94a4038ab3692610ab48cf46b9f&response_type=code&sdk=php-sdk-5.7.0&redirect_uri=https%3A%2F%2Fflixable.com%2Fcallback.php%3Fprovider%3Dfacebook&scope=email">
+                  <div id="facebookButton">
+                    <span class="icon"></span>
+                    <span class="text">Log In With Facebook</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 text-center">
+                <a href="https://accounts.google.com/o/oauth2/auth?response_type=code&access_type=online&client_id=860528796932-0te91jl5tghjj51o6jf97pb1esnu88au.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fflixable.com%2Fcallback.php%3Fprovider%3Dgoogle&state&scope=email%20profile&approval_prompt=auto">
+                  <div id="googleButton">
+                    <span class="icon"></span>
+                    <span class="text">Log In With Google</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand mr-lg-3" href="index.html"><img src="images/logo.svg" style="height:28px; width:125px;"  alt="List of Movies and TV Shows on Netflix | Flixable"></a>
+      <div class="d-flex order-lg-1 ml-auto">
+        <form action="index.html" method="get" class="form-inline search-form">
+          <div class="input-group">
+            <input class="form-control d-none search-input typeahead" type="text" value="" name="s" placeholder="Title, person" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-danger search-button" type="submit"><span class="fas fa-search"></span></button>
+            </div>
+          </div>
+        </form>
+                <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link px-2" id="register" href="javascript:;" data-toggle="modal" data-target="#loginModal">Sign In</a>
+          </li>
+        </ul>
+              </div>
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Browse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="popular.html">Popular</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="coming-soon.html">Coming Soon</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="leaving-netflix.html">Leaving</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="netflix-originals.html">Originals</a>
+          </li>
+                    <li class="nav-item">
+            <a class="nav-link" href="guides.html">Guides</a>
+          </li>
+                    <li class="nav-item">
+            <a class="nav-link my-list" href="my-list.html">My List</a>
+          </li>
+                  </ul>
+      </div> 
+    </nav>
+                <div class="jumbotron jumbotron-fluid" style="margin: 0; padding: 0">
+            <div class="container">
+        <div class="row justify-content-center text-center">
+             <div class="col mt-4">
+               <script async src="pagead/js/adsbygoogle.js"></script>
+               <!-- Flixable - Responsive -->
+               <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-7234786419871369"
+                 data-ad-slot="1479555091"
+data-ad-format="auto"
+data-full-width-responsive="true">
+</ins>
+               <script>
+               (adsbygoogle = window.adsbygoogle || []).push({});
+               </script>
+             </div>
+           </div>      </div>
+            </div>
+              <main role="main">
+            <!-- Jumbotron -->
+      <div class="jumbotron jumbotron-fluid" style="padding-top: 2rem">
+        <div class="container">
+          <h1>List of Movies and TV Shows on Netflix</h1>
+          <p>Are you wondering what's new – or what's best – on Netflix? Flixable is a Netflix search engine that offers a complete, searchable and browsable list of all the movies and TV shows that are currently streaming on Netflix in the U.S.</p>
+                    <div class="collapse mt-2" id="introduction">
+          <h2>What Is Netflix?</h2>
+          <p>Netflix started as a competitor to brick-and-mortar video rental stores, renting DVDs by mail, and expanded its business with the introduction of streaming video in 2007. Originally, Netflix was only available in the United States, but that changed when the service launched in Canada in 2010. By January 2016, Netflix was operating in over 190 countries. Today, we know Netflix as the world's leading internet entertainment service. As a Netflix subscriber, you can watch TV shows and movies when you want, where you want, and on whatever device you want. You can play, pause, and resume watching without commercials or commitments.</p>
+          <h2>Netflix Originals</h2>
+          <p>Netflix spends billions of dollars on original TV shows and movies annually with the aim of making 50% of its library to be original content. This strategy has been a profitable one and has led to Netflix boasting almost 140 million subscribers worldwide. Today, Netflix subscribers pay for the service in order to watch Netflix originals, such as hugely popular series <i>Orange Is the New Black</i> and <i>Stranger Things</i>. Netflix's original movies are succeeding as well, and its recent action movie, <i>Bright</i>, starring Will Smith, has already become one of the most watched Netflix originals ever.</p>
+                    <p>Here are some Netflix originals that you may want to watch:</p>
+          <p class="font-weight-bold"><i>BoJack Horseman</i></p>
+          <p>This animated comedy series follows the struggles of BoJack Horseman, the star of the hit TV show <i>Horsin' Around</i> in the 1990s. Now, 20 years later, BoJack is a self-loathing alcoholic who lives in Los Angeles and complains about everything.</p>
+          <p class="font-weight-bold"><i>The Crown</i></p>
+          <p>This historical drama series is a biographical story about the reign of Queen Elizabeth II of the United Kingdom. The series has received several accolades, including the Golden Globe Award for Best Television Series &ndash; Drama in 2017 and 2018.</p>
+          <p class="font-weight-bold"><i>Grace and Frankie</i></p>
+          <p>Two women, proper Grace and eccentric Frankie, begin to bond after their husbands announce that they are in love and intend to marry. Both couples have adult children who are equally knocked out by the news.</p>
+          <p class="font-weight-bold"><i>Making a Murderer</i></p>
+          <p>This documentary series explores the story of Steven Avery, a man who was wrongfully convicted of sexual assault and attempted murder of Penny Beerntsen but exonerated by DNA evidence 18 years later in 2003. In 2007, Avery was convicted again &ndash; this time for the murder of local photographer Teresa Halbach.</p>
+          <p class="font-weight-bold"><i>Master of None</i></p>
+          <p>Aziz Ansari stars as Dev, a 30-year-old actor who lives in New York City and has no idea what he wants in life. He struggles to make decisions concerning his professional and romantic life.</p>
+          <p class="font-weight-bold"><i>Narcos</i></p>
+          <p>Seasons 1 and 2 are based on the story of Colombian drug lord Pablo Escobar (1949&ndash;1993), who became a multibillionaire and the wealthiest criminal in history by selling cocaine. Season 3 concentrates on the rise of the infamous Cali Cartel that once controlled over 90% of the world's cocaine market.</p>
+          <p class="font-weight-bold"><i>Orange Is the New Black</i></p>
+          <p>A privileged New Yorker is sentenced to a year and a half in a women's prison for an old crime of carrying a bag of drug money from the United States to Belgium. As a normally law-abiding person, she isn’t prepared for prison life's conflicts and surprises.</p>
+          <p class="font-weight-bold"><i>Stranger Things</i></p>
+          <p>A disappearance of a young boy leads residents of a small town to uncover a mystery involving secret experiments and supernatural forces. Things become even weirder when a little girl with a shaved head comes into the story.</p>
+          <p></p>
+                    <p><a href="netflix-originals.html">Here's a list of all the Netflix originals</a></p>
+          <h2>Leaving Netflix</h2>
+          <p>In addition to producing original content, Netflix partners with other content providers to license streaming rights for TV shows and movies. The TV shows and movies that Netflix licenses are available for Netflix subscribers to stream for a limited time, which can range from less than a year to several years. That's why Netflix's library is constantly changing. And that's also why you might want to know whether something you want to watch is leaving the service within the next couple of weeks.</p>
+          <p><a href="leaving-netflix.html">Here's a list of what's scheduled to leave Netflix soon</a></p>
+          <h2>How Much Is Netflix?</h2>
+          <p>How much Netflix costs depends on which of its three plans you choose. You can opt to pay $7.99/month for the "Basic" plan, $10.99/month for the "Standard" plan, or $13.99/month for the "Premium" plan.</p>
+          <p>Of these, the Standard plan is the most popular. It offers HD streaming on up to two devices at once. The Basic plan offers only one SD stream at a time, while Premium gives you four screens in 4K Ultra HD.</p>
+          <p><a href="https://www.netflix.com" target="_blank">Try Netflix for free</a></p>
+          </div>
+          <p><a data-toggle="collapse" href="#introduction"><span class="read-more">Read More...</span></a></p>
+                    <div class="fb-like" data-href="https://www.facebook.com/FlixableCom/" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+        </div>
+      </div>
+            <div class="container" id="filterContainer">
+                <div class="row justify-content-center">
+          <div class="col-12 mb-3">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link font-weight-bold active" href="index.html#filterContainer">All</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link font-weight-bold" href="genre/movies.html#filterContainer">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link font-weight-bold" href="genre/tv-shows.html#filterContainer">TV Shows</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <form onsubmit="return false;">
+          <div class="row justify-content-center">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="genre" class="font-weight-bold">Genre</label>
+                <select class="form-control" id="genre">
+                  <option value="">All</option>
+                                    <optgroup label="Movies">
+                  	          <option value="action-and-adventure">Action & Adventure</option>
+                  	          <option value="anime-features">Anime Features</option>
+                  	          <option value="children-and-family-movies">Children & Family Movies</option>
+                  	          <option value="classic-movies">Classic Movies</option>
+                  	          <option value="comedies">Comedies</option>
+                  	          <option value="cult-movies">Cult Movies</option>
+                  	          <option value="documentaries">Documentaries</option>
+                  	          <option value="dramas">Dramas</option>
+                  	          <option value="faith-and-spirituality">Faith & Spirituality</option>
+                  	          <option value="horror-movies">Horror Movies</option>
+                  	          <option value="independent-movies">Independent Movies</option>
+                  	          <option value="international-movies">International Movies</option>
+                  	          <option value="lgbtq-movies">LGBTQ Movies</option>
+                  	          <option value="music-and-musicals">Music & Musicals</option>
+                  	          <option value="romantic-movies">Romantic Movies</option>
+                  	          <option value="sci-fi-and-fantasy">Sci-Fi & Fantasy</option>
+                  	          <option value="sports-movies">Sports Movies</option>
+                  	          <option value="stand-up-comedy">Stand-Up Comedy</option>
+                  	          <option value="thrillers">Thrillers</option>
+                                    </optgroup>
+                                    <optgroup label="TV Shows">
+                  	          <option value="anime-series">Anime Series</option>
+                  	          <option value="british-tv-shows">British TV Shows</option>
+                  	          <option value="classic-and-cult-tv">Classic & Cult TV</option>
+                  	          <option value="crime-tv-shows">Crime TV Shows</option>
+                  	          <option value="docuseries">Docuseries</option>
+                  	          <option value="international-tv-shows">International TV Shows</option>
+                  	          <option value="kids-tv">Kids' TV</option>
+                  	          <option value="korean-tv-shows">Korean TV Shows</option>
+                  	          <option value="reality-tv">Reality TV</option>
+                  	          <option value="romantic-tv-shows">Romantic TV Shows</option>
+                  	          <option value="science-and-nature-tv">Science & Nature TV</option>
+                  	          <option value="spanish-language-tv-shows">Spanish-Language TV Shows</option>
+                  	          <option value="stand-up-comedy-and-talk-shows">Stand-Up Comedy & Talk Shows</option>
+                  	          <option value="teen-tv-shows">Teen TV Shows</option>
+                  	          <option value="tv-action-and-adventure">TV Action & Adventure</option>
+                  	          <option value="tv-comedies">TV Comedies</option>
+                  	          <option value="tv-dramas">TV Dramas</option>
+                  	          <option value="tv-horror">TV Horror</option>
+                  	          <option value="tv-mysteries">TV Mysteries</option>
+                  	          <option value="tv-sci-fi-and-fantasy">TV Sci-Fi & Fantasy</option>
+                  	          <option value="tv-thrillers">TV Thrillers</option>
+                                    </optgroup>
+                                  </select>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="rating" class="font-weight-bold">Rating</label>
+                <select class="form-control" id="rating">
+                  <option value="0" selected>All</option>
+                                    <option value="9">9+</option>
+                                    <option value="8">8+</option>
+                                    <option value="7">7+</option>
+                                    <option value="6">6+</option>
+                                    <option value="5">5+</option>
+                                    <option value="4">4+</option>
+                                    <option value="3">3+</option>
+                                    <option value="2">2+</option>
+                                    <option value="1">1+</option>
+                                  </select>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="audio" class="font-weight-bold">Audio</label>
+                <select class="form-control" id="audio">
+                  <option value="">All</option>
+                                      <option value="ar">Arabic</option>
+                                      <option value="hy">Armenian</option>
+                                      <option value="as">Assamese</option>
+                                      <option value="bn">Bangla</option>
+                                      <option value="eu">Basque</option>
+                                      <option value="pt">Brazilian Portuguese</option>
+                                      <option value="yue">Cantonese</option>
+                                      <option value="ca">Catalan</option>
+                                      <option value="hr">Croatian</option>
+                                      <option value="cs">Czech</option>
+                                      <option value="da">Danish</option>
+                                      <option value="nl">Dutch</option>
+                                      <option value="en">English</option>
+                                      <option value="fil">Filipino</option>
+                                      <option value="fi">Finnish</option>
+                                      <option value="fr">French</option>
+                                      <option value="gl">Galician</option>
+                                      <option value="ka">Georgian</option>
+                                      <option value="de">German</option>
+                                      <option value="gu">Gujarati</option>
+                                      <option value="he">Hebrew</option>
+                                      <option value="hi">Hindi</option>
+                                      <option value="hu">Hungarian</option>
+                                      <option value="is">Icelandic</option>
+                                      <option value="id">Indonesian</option>
+                                      <option value="it">Italian</option>
+                                      <option value="ja">Japanese</option>
+                                      <option value="kn">Kannada (India)</option>
+                                      <option value="kha">Khasi</option>
+                                      <option value="km">Khmer</option>
+                                      <option value="ko">Korean</option>
+                                      <option value="ms">Malay</option>
+                                      <option value="ml">Malayalam</option>
+                                      <option value="zh">Mandarin</option>
+                                      <option value="mr">Marathi</option>
+                                      <option value="ne">Nepali</option>
+                                      <option value="nb">Norwegian</option>
+                                      <option value="fa">Persian</option>
+                                      <option value="pl">Polish</option>
+                                      <option value="pa">Punjabi</option>
+                                      <option value="ro">Romanian</option>
+                                      <option value="ru">Russian</option>
+                                      <option value="si">Sinhala</option>
+                                      <option value="es">Spanish</option>
+                                      <option value="sv">Swedish</option>
+                                      <option value="tl">Tagalog</option>
+                                      <option value="nan">Taiwanese</option>
+                                      <option value="ta">Tamil</option>
+                                      <option value="te">Telugu</option>
+                                      <option value="th">Thai</option>
+                                      <option value="tr">Turkish</option>
+                                      <option value="uk">Ukrainian</option>
+                                      <option value="ur">Urdu</option>
+                                      <option value="vi">Vietnamese</option>
+                                      <option value="xh">Xhosa</option>
+                                      <option value="zu">Zulu</option>
+                                  </select>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="orderBy" class="font-weight-bold">Sort By</label>
+                <select class="form-control" id="orderBy">
+                  <option value="date" selected>New on Netflix</option>
+                  <option value="rating">Rating</option>
+                  <option value="year">Release Year</option>
+                  <option value="title">Title</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+              <div class="col-12 font-weight-bold">Release Year</div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-8 mb-4" id="sliderContainer">
+              <div class="text-left" id="yearStart">1920</div>
+              <!--<input id="yearSlider" type="text" value="" data-slider-min="1920" data-slider-max="2019" data-slider-step="1" data-slider-value="[1920,2019]">-->
+              <input id="yearSlider" type="text" value="" data-slider-min="1920" data-slider-max="2019" data-slider-step="1" data-slider-value="[1920,2019]">
+              <div class="text-right" id="yearEnd">2019</div>
+            </div>
+            <div class="col-md-4 mb-4" id="submitContainer">
+              <button type="button" class="btn btn-primary" id="submit"><span class="fas fa-filter mr-2"></span><span class="font-weight-bold small text-uppercase">Filter</span></button>
+            </div>
+          </div>
+        </form>
+                        <div class="row">
+          <div class="col-12 mb-2">
+            <h2>
+            October 10            </h2>
+          </div>
+        </div>
+        <div class="row">  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="title/81172568.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/81172568-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/81172568-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/81172568-us.jpg" alt="Beyblade Burst Turbo (2018)">
+        </picture>-->
+        <img class="poster" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABR8qQvOiOR8IUEMzLxnAgb_X1QPC_Yh1kOq7S-RRffCmK3zCqelSGcapLgNGEiG3qZNSc9HEpi_eAJO9hyGGLjlPMrg.jpg" alt="Beyblade Burst Turbo (2018)">
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Anime Series</span>
+                  <span class="d-block font-weight-bold small">Kids' TV</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="title/81172568.html">Beyblade Burst Turbo</a></strong><br>2018</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/81171871-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/81171871-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/81171871-us.jpg" alt="GEN HOSHINO STADIUM TOUR “POP VIRUS” (2019)">
+        </picture>-->
+        <img class="poster" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABZQD7-HQKwXBqlMzLcg7jJxz9CtwfijNCXmAXndzctoyM0RTCWeEcd9svwf7_sJrxGXva5Cwi5GZOimOe4RXnMxeBgo.jpg" alt="GEN HOSHINO STADIUM TOUR “POP VIRUS” (2019)">
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">International Movies</span>
+                  <span class="d-block font-weight-bold small">Music & Musicals</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">GEN HOSHINO STADIUM TOUR “POP VIRUS”</a></strong><br>2019</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/80036165-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/80036165-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/80036165-us.jpg" alt="Schitt's Creek (2019)">
+        </picture>-->
+        <img class="poster" src="img/AAAABYgWVH31NSBpCNJ6TzYCf555VkNEMlI90SqOLgI2ai_TWHQGbEUynC6m5vTc3zlb-MjrbLwkgObZVxUqSrt2JPGeMKwjgyT-RNuw0ulvJOcMHIEEVROe-RM4unphMaGgjA.jpg" alt="Schitt's Creek (2019)">
+                <div class="rating-container small"><span class="font-weight-bold">7.0</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">TV Comedies</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">Schitt's Creek</a></strong><br>2019</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/81019771-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/81019771-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/81019771-us.jpg" alt="Ultramarine Magmell (2019)">
+        </picture>-->
+        <img class="poster" src="img/AAAABfGdujP1SAPxU2pC7a3V3J4GESbnTdNxUJeoNQklYdPTGFdiFFaDmbgDGq-ouGrXbkHa_4LTIhV14c_rpgZvgDgbw9PszUqaiaXG7MHaQSggzbhXI57_6ipmYEmj.jpg" alt="Ultramarine Magmell (2019)">
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Anime Series</span>
+                  <span class="d-block font-weight-bold small">International TV Shows</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">Ultramarine Magmell</a></strong><br>2019</p>
+  </div>
+</div>        <div class="row">
+          <div class="col-12 mb-2">
+            <h2>
+            October 9            </h2>
+          </div>
+        </div>
+        <div class="row">  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/80244311-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/80244311-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/80244311-us.jpg" alt="After (2019)">
+        </picture>-->
+        <img class="poster" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABc8JsyHDUqsb4w4t3-5a4_Gx8P5HyT8QhQ6Uz5DXRD2TIRaDyyyHyUEl2G0O24RemXN6KP_85brJtaprLbnHM7go5dg.jpg" alt="After (2019)">
+                <div class="rating-container small"><span class="font-weight-bold">5.8</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Dramas</span>
+                  <span class="d-block font-weight-bold small">Romantic Movies</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">After</a></strong><br>2019</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/81183570-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/81183570-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/81183570-us.jpg" alt="Home Is Where the Killer Is (2019)">
+        </picture>-->
+        <img class="poster" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABfx7zX9GTOTsfr1wm855l4kb3DezcYLgtKfk23gXBnyi97GmtmR6G1l_4iN6Gt1dSgpZaqm6PXxQ3mA4i2-2oT0nY8A.jpg" alt="Home Is Where the Killer Is (2019)">
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Dramas</span>
+                  <span class="d-block font-weight-bold small">Thrillers</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">Home Is Where the Killer Is</a></strong><br>2019</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/80216665-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/80216665-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/80216665-us.jpg" alt="Rhythm + Flow (2019)">
+        </picture>-->
+        <img class="poster" src="img/j4lVrbLQFhUx4P0fk_6e4_rpvCiKslvMX1a5o1AhPtKm3nZ0dYTf2mX1NL5GTylhBxHs2ibjzg2bmnyUB97UqstLwCdDBzAkdvMw_4hy6yfqcrtgeroi5cu2d23.jpg" alt="Rhythm + Flow (2019)">
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Reality TV</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">Rhythm + Flow</a></strong><br>2019</p>
+  </div>
+        </div>
+                <div class="row">
+          <div class="col-12 mb-2">
+            <h2>
+            October 8            </h2>
+          </div>
+        </div>
+        <div class="row">  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/80995737-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/80995737-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/80995737-us.jpg" alt="Deon Cole: Cole Hearted (2019)">
+        </picture>-->
+        <img class="poster" src="img/AAAABRxeonGHKFvB0g3yXTouCgjuIj7be8StxRd6lQgy1-IO2HyFat0bIigzSIZ5i-sTMiPc4HtLM_3IH9GmS9VRtT7kf_bssB9rWP8k-VjU-pD8BK2RrVkBBkeUZwRu.jpg" alt="Deon Cole: Cole Hearted (2019)">
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Stand-Up Comedy</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">Deon Cole: Cole Hearted</a></strong><br>2019</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/81021976-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/81021976-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/81021976-us.jpg" alt="The Spooky Tale of Captain Underpants Hack-a-ween (2019)">
+        </picture>-->
+        <img class="poster" src="img/AAAABQKFajP6knjIaqnAPHc3K6aRbM0iYKierL4-ksYtTMyfG2Xnl9pt-ueRNyMF3frLUasoll8C7tIfMgyQOX3Qxe_6TVpdSDuQtZ6C1_v0lUUFzUAS_HE_-uSBQGSQ.jpg" alt="The Spooky Tale of Captain Underpants Hack-a-ween (2019)">
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Children & Family Movies</span>
+                  <span class="d-block font-weight-bold small">Comedies</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">The Spooky Tale of Captain Underpants Hack-a-ween</a></strong><br>2019</p>
+  </div>
+        </div>
+                <div class="row">
+          <div class="col-12 mb-2">
+            <h2>
+            October 7            </h2>
+          </div>
+        </div>
+        <div class="row">  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/80025390-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/80025390-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/80025390-us.jpg" alt="The Water Diviner (2014)">
+        </picture>-->
+        <img class="poster" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABdq3oNy-H2z942TE49mY3uGQF5uS2HucEGMGONRekEFq_AopYekm1M4ICZEzDTK46Ngrir8Iq7ulbw12ERzSYmwPzgs.jpg" alt="The Water Diviner (2014)">
+                <div class="rating-container small"><span class="font-weight-bold">6.8</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Dramas</span>
+                  <span class="d-block font-weight-bold small">International Movies</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">The Water Diviner</a></strong><br>2014</p>
+  </div>
+        </div>
+                <div class="row">
+          <div class="col-12 mb-2">
+            <h2>
+            October 6            </h2>
+          </div>
+        </div>
+        <div class="row">  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/81016338-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/81016338-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/81016338-us.jpg" alt="Love for Sale (2018)">
+        </picture>-->
+        <img class="poster" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABTLqd6wjf6vBDh0o87rAe6CKvoynjKH5R0_p7WrJc5i125AaUkGFzfBThcHxQ2mhAbYZuwGR40CPnuFMxfzaIg_NrYk.jpg" alt="Love for Sale (2018)">
+                <div class="rating-container small"><span class="font-weight-bold">8.0</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Dramas</span>
+                  <span class="d-block font-weight-bold small">International Movies</span>
+                  <span class="d-block font-weight-bold small">Romantic Movies</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">Love for Sale</a></strong><br>2018</p>
+  </div>
+        </div>
+                <div class="row">
+          <div class="col-12 mb-2">
+            <h2>
+            October 5            </h2>
+          </div>
+        </div>
+        <div class="row">  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/80215730-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/80215730-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/80215730-us.jpg" alt="Legend Quest: Masters of Myth (2019)">
+        </picture>-->
+        <img class="poster" src="img/AAAABdzUdQTimN99h74jKL4BLg6a-S6s-zUI-kpLhNktKve1tn6uMP4MsmS_lG65_tqpXiaKXU-mcKJccz58BHpXGwhmPOcLBEDdpKy-aXTT0-HZcfccWcB49Vnwn7hy.jpg" alt="Legend Quest: Masters of Myth (2019)">
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Kids' TV</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">Legend Quest: Masters of Myth</a></strong><br>2019</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/81161487-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/81161487-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/81161487-us.jpg" alt="My Country: The New Age (2019)">
+        </picture>-->
+        <img class="poster" src="img/zOdvXi67R_8aPB6CKtkGXQJanaipQ1S7lVbx9q6OjqGtkOHNjtVfKJhXMWKsZM8uEivY5LHwu0-em2VZD8MLB5qzWLIYqZq-pSpQ_5xmz55hz7j8amrknr0w6ui.jpg" alt="My Country: The New Age (2019)">
+                <div class="rating-container small"><span class="font-weight-bold">7.0</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">International TV Shows</span>
+                  <span class="d-block font-weight-bold small">Korean TV Shows</span>
+                  <span class="d-block font-weight-bold small">TV Action & Adventure</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">My Country: The New Age</a></strong><br>2019</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/81177367-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/81177367-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/81177367-us.jpg" alt="Noblemen (2019)">
+        </picture>-->
+        <img class="poster" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABZidESGah5pXktbsYWnRXCoZK6gs6LrHok5nfnI3H2fl7wuxpsBtmVhS7TffHUnIteKC-jFp39NiGSRqXdpLggQ6PnM.jpg" alt="Noblemen (2019)">
+                <div class="rating-container small"><span class="font-weight-bold">8.0</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Dramas</span>
+                  <span class="d-block font-weight-bold small">Independent Movies</span>
+                  <span class="d-block font-weight-bold small">International Movies</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">Noblemen</a></strong><br>2019</p>
+  </div>
+        </div>
+                <div class="row">
+          <div class="col-12 mb-2">
+            <h2>
+            October 4            </h2>
+          </div>
+        </div>
+        <div class="row">  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/80164032-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/80164032-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/80164032-us.jpg" alt="A Plastic Ocean (2016)">
+        </picture>-->
+        <img class="poster" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABSV4gp7nYb_a2tDItD01a8UK0OhucJVcn9T6DHnH8emso7yEvKB4G41IL2VTssYHaKg3DowpbMiY98U8Dk67rqVcAhs.jpg" alt="A Plastic Ocean (2016)">
+                <div class="rating-container small"><span class="font-weight-bold">7.4</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Documentaries</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">A Plastic Ocean</a></strong><br>2016</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/81158574-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/81158574-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/81158574-us.jpg" alt="Brother in Love (2019)">
+        </picture>-->
+        <img class="poster" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABb_i10xoWjw1IcMvK3ICnEzulw9PhyGByKJTn6ytArzhg1LbNMGvE3G-wMPYobwbhJKMqfJj6gwMX_9dq9dQkSDlAfo.jpg" alt="Brother in Love (2019)">
+                <div class="rating-container small"><span class="font-weight-bold">7.0</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Comedies</span>
+                  <span class="d-block font-weight-bold small">International Movies</span>
+                  <span class="d-block font-weight-bold small">Romantic Movies</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">Brother in Love</a></strong><br>2019</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/80214792-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/80214792-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/80214792-us.jpg" alt="Creeped Out (2019)">
+        </picture>-->
+        <img class="poster" src="img/827nDeHx-2djeY_JPdcLZY_ULjSes2_BxQgY94RuP8Yq0N5Rd_x9yngy4LdHS4lDBpu6ffnvXSG4iBfGZ-qKntylwDyxbl9Z-SLQ_yjqpmpgmnjdn5vsenjwk66.jpg" alt="Creeped Out (2019)">
+                <div class="rating-container small"><span class="font-weight-bold">6.9</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">British TV Shows</span>
+                  <span class="d-block font-weight-bold small">Kids' TV</span>
+                  <span class="d-block font-weight-bold small">TV Thrillers</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">Creeped Out</a></strong><br>2019</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/80237905-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/80237905-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/80237905-us.jpg" alt="In the Tall Grass (2019)">
+        </picture>-->
+        <img class="poster" src="img/AAAABfP_qY_SKteDLAJUWeIWy4Wtv0k-TY1LTRJkb-Y4ZezLVBEUhSMVDN7Lvza5E-UVu2ZVKdYkY8Eh49b70xiqfq2MlLlvPP7Ux7F0QYGtjKBEafCEmlqKWUyFhe-4.jpg" alt="In the Tall Grass (2019)">
+                <div class="rating-container small"><span class="font-weight-bold">5.9</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Horror Movies</span>
+                  <span class="d-block font-weight-bold small">Thrillers</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">In the Tall Grass</a></strong><br>2019</p>
+  </div>
+</div><div class="row">  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/81132440-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/81132440-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/81132440-us.jpg" alt="Kids on the Block (2019)">
+        </picture>-->
+        <img class="poster" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABVkws4UDSDnzabyBC9mELYEGjP0H8ErFCq1L1lYPmGQ0lm0t38cIyVfUAb9km57-CEayXnOEI3UjSFINmwkw6I-b9YM.jpg" alt="Kids on the Block (2019)">
+                <div class="rating-container small"><span class="font-weight-bold">5.0</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Children & Family Movies</span>
+                  <span class="d-block font-weight-bold small">Comedies</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">Kids on the Block</a></strong><br>2019</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/80002479-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/80002479-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/80002479-us.jpg" alt="Peaky Blinders (2019)">
+        </picture>-->
+        <img class="poster" src="img/TvDiRys9nEhn8FCOlkf7WgnQdLiW_LAn_IOMhW4cWFnpnpSPOl-yld2MTA5PpLVK0qo8CQUnPOZbgyJga3Nxug1H1aQ4k7s89zLQ_bxhi5vxxp6t42zo7ykfvyy.jpg" alt="Peaky Blinders (2019)">
+                <div class="rating-container small"><span class="font-weight-bold">8.3</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">British TV Shows</span>
+                  <span class="d-block font-weight-bold small">Crime TV Shows</span>
+                  <span class="d-block font-weight-bold small">International TV Shows</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">Peaky Blinders</a></strong><br>2019</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/80117803-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/80117803-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/80117803-us.jpg" alt="Raising Dion (2019)">
+        </picture>-->
+        <img class="poster" src="img/AAAABYBABsYr9HlHo5M1YT86ySUiNXFOxnl3TmGg2fIeERxMqEhv3uPwfQYcrxGMAqp8c63CCNkCmrHEUSGib7EU9Cgra9oNxm0YWiWlz7-Q1dgsRqYXPRh0WuYRW0Gr.jpg" alt="Raising Dion (2019)">
+                <div class="rating-container small"><span class="font-weight-bold">6.5</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Kids' TV</span>
+                  <span class="d-block font-weight-bold small">TV Action & Adventure</span>
+                  <span class="d-block font-weight-bold small">TV Dramas</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">Raising Dion</a></strong><br>2019</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/80146284-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/80146284-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/80146284-us.jpg" alt="Rotten (2019)">
+        </picture>-->
+        <img class="poster" src="img/Ff6SrY3YiT2aLUY0ks-uZwPCReu8eHA1V2VCve1fab-ptnDsNE76KNcVJwItcXaZevSb2HDtz3uTNpy1DCQQ1sq2CBoPg4J9R1Uw_gbza8427eigr3s7kzeo3dk.jpg" alt="Rotten (2019)">
+                <div class="rating-container small"><span class="font-weight-bold">7.3</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Docuseries</span>
+                  <span class="d-block font-weight-bold small">Science & Nature TV</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">Rotten</a></strong><br>2019</p>
+  </div>
+</div><div class="row">  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/80124711-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/80124711-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/80124711-us.jpg" alt="Super Monsters (2019)">
+        </picture>-->
+        <img class="poster" src="img/Z4FfX2M0TB9ui0thkxhnnyrVxDJHUMWnmZ_uGzo4yoa8w339JegEJTXtcETp6uCeO5GPz9-YgcmMTWnow9W4Yh4asexRnx2TVCig_4yahcr32cpqx0gbymatd4f.jpg" alt="Super Monsters (2019)">
+                <div class="rating-container small"><span class="font-weight-bold">7.0</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Kids' TV</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">Super Monsters</a></strong><br>2019</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/81021243-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/81021243-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/81021243-us.jpg" alt="Super Monsters: Vida's First Halloween (2019)">
+        </picture>-->
+        <img class="poster" src="img/AAAABR9jesIVVszNsXR1Vba5EbUiVi8zOsgC6qcBvQg3UxU8M9xM06_SlZy0J11gl9MijYh8jewL-7WV3DwixhcxyEq18BafwShM8JHqjJgoDbJvmIQ759AQzEoz3FpE.jpg" alt="Super Monsters: Vida's First Halloween (2019)">
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Children & Family Movies</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">Super Monsters: Vida's First Halloween</a></strong><br>2019</p>
+  </div>
+        </div>
+                <div class="row">
+          <div class="col-12 mb-2">
+            <h2>
+            October 3            </h2>
+          </div>
+        </div>
+        <div class="row">  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/70185045-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/70185045-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/70185045-us.jpg" alt="Forks Over Knives (2011)">
+        </picture>-->
+        <img class="poster" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABRjlQq_crMl0IS7FcUGiT2piBPJfmzV2cEg7A8Tq-XdlcYPzO-oSOb6BOuOyLxL6Tu-tC_kwq_mzVERzDb4tHW-rdsc.jpg" alt="Forks Over Knives (2011)">
+                <div class="rating-container small"><span class="font-weight-bold">7.1</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Documentaries</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">Forks Over Knives</a></strong><br>2011</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/80217066-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/80217066-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/80217066-us.jpg" alt="Seis Manos (2019)">
+        </picture>-->
+        <img class="poster" src="img/AAAABXk2CY95_2L6NFVVpBIqsVK7Cnm7vodbaO-TbGQdbITT8PcuJsmdNSs2oKnZAjablKzNBQkyDJ-FubeW1AlioYtJzoBdnc87imDhWeFcG1cYLMUo5YFF0DHxcRTs.jpg" alt="Seis Manos (2019)">
+                <div class="rating-container small"><span class="font-weight-bold">8.0</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Anime Series</span>
+                  <span class="d-block font-weight-bold small">Crime TV Shows</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">Seis Manos</a></strong><br>2019</p>
+  </div>
+        </div>
+                <div class="row">
+          <div class="col-12 mb-2">
+            <h2>
+            October 2            </h2>
+          </div>
+        </div>
+        <div class="row">  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/80222133-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/80222133-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/80222133-us.jpg" alt="Border Patrol (2016)">
+        </picture>-->
+        <img class="poster" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABfsmZLSrJLnp-1fAnwnQ0bsYIBRnuF2oCKcjdcSQqWltRcDvJLjIw7b8_5jhN1yyK74klGriVuL4jYaYZJ_BE2OCKWs.jpg" alt="Border Patrol (2016)">
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Reality TV</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">Border Patrol</a></strong><br>2016</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/81029301-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/81029301-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/81029301-us.jpg" alt="Botched Up Bodies (2013)">
+        </picture>-->
+        <img class="poster" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABYTg0D7qVc4WCQB-vylXSvGCfZl2k0NYg2iKIYfHUmW5oJC4ZUc0e97uhShAhm0BgODQtEyKossMzQLNl63pw1rccRw.jpg" alt="Botched Up Bodies (2013)">
+                <div class="rating-container small"><span class="font-weight-bold">6.0</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">British TV Shows</span>
+                  <span class="d-block font-weight-bold small">Docuseries</span>
+                  <span class="d-block font-weight-bold small">International TV Shows</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">Botched Up Bodies</a></strong><br>2013</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/81025218-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/81025218-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/81025218-us.jpg" alt="Bringing Sexy Back (2015)">
+        </picture>-->
+        <img class="poster" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABcKokLhyJLTfYuy75EsXBG_HvGGbZrML-ir1lJT6-TcDr1HJiac3A-FU_6BOvu1Tuc8ilYxuYIQm3hTqY_3yHiUE5dU.jpg" alt="Bringing Sexy Back (2015)">
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">International TV Shows</span>
+                  <span class="d-block font-weight-bold small">Reality TV</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">Bringing Sexy Back</a></strong><br>2015</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/81025251-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/81025251-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/81025251-us.jpg" alt="Court Justice (2017)">
+        </picture>-->
+        <img class="poster" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABaUDmOCENNhK-RINwCamgQ31Wxm2YAiuW9yeZ-Eb5pi7ZwXGFr1xl3KsREXWvXPkuzy_Woy3LHd91PZx1tGCe_Ws6ww.jpg" alt="Court Justice (2017)">
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Crime TV Shows</span>
+                  <span class="d-block font-weight-bold small">Docuseries</span>
+                  <span class="d-block font-weight-bold small">International TV Shows</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">Court Justice</a></strong><br>2017</p>
+  </div>
+</div><div class="row">  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/80224490-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/80224490-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/80224490-us.jpg" alt="Diva Brides (2017)">
+        </picture>-->
+        <img class="poster" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABSFM3M-6sYhkJ-1edLuc34oavNvNty_DNpPKi1P4G05Dq5yzQLtFk1w6hjFHz4wcQ_Zcrq7u5SNmUm2_qPkWIhXuut0.jpg" alt="Diva Brides (2017)">
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">British TV Shows</span>
+                  <span class="d-block font-weight-bold small">Reality TV</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">Diva Brides</a></strong><br>2017</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/81025309-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/81025309-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/81025309-us.jpg" alt="Ghost Town Gold (2012)">
+        </picture>-->
+        <img class="poster" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABWqppqqPNb73YWQgIig8RFJFvO7-a2vwofGrer1MTud7OuqJbqbVg-ZiV8mYU8oPgvyS_32Lbn7gyXAWGrfHftgBOvU.jpg" alt="Ghost Town Gold (2012)">
+                <div class="rating-container small"><span class="font-weight-bold">8.0</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Reality TV</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">Ghost Town Gold</a></strong><br>2012</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/81025263-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/81025263-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/81025263-us.jpg" alt="Horror Homes (2016)">
+        </picture>-->
+        <img class="poster" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABfpRFgw-qilQHF_jf1q-GzHnxETaM8aB1HuckbjMQx1vbmL2mRSngUlg3DjvLhCuA4YYqnB1l0JZexoHcyZ1WoftPq4.jpg" alt="Horror Homes (2016)">
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">British TV Shows</span>
+                  <span class="d-block font-weight-bold small">Docuseries</span>
+                  <span class="d-block font-weight-bold small">International TV Shows</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">Horror Homes</a></strong><br>2016</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/81025361-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/81025361-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/81025361-us.jpg" alt="Kitten Rescuers (2017)">
+        </picture>-->
+        <img class="poster" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABeRmPtkqRd8KP_Xm1opsW0I5orSQO4GrVhcRR3Kg7YR58Ns5xbB1tu3NGP7Il4Z4hFw-fMrq30LChkZaQgGODJCbVNY.jpg" alt="Kitten Rescuers (2017)">
+                <div class="rating-container small"><span class="font-weight-bold">7.0</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">British TV Shows</span>
+                  <span class="d-block font-weight-bold small">International TV Shows</span>
+                  <span class="d-block font-weight-bold small">Reality TV</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">Kitten Rescuers</a></strong><br>2017</p>
+  </div>
+</div><div class="row">  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/81025317-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/81025317-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/81025317-us.jpg" alt="License to Drill: Louisiana (2014)">
+        </picture>-->
+        <img class="poster" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABZJNbuGOsjSbk7uZDB-O937Y5Libd6pqxd9bAtaeXY0kc6EqBMx_UvVbPHWepb_mo5t_19Sc7VdH5gah2X71rCIEbfk.jpg" alt="License to Drill: Louisiana (2014)">
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Reality TV</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">License to Drill: Louisiana</a></strong><br>2014</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/80209609-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/80209609-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/80209609-us.jpg" alt="Living Undocumented (2019)">
+        </picture>-->
+        <img class="poster" src="img/AAAABeLBRuWY_c-a3ZH5z5FsiiwPt79e6NdUT5O9mCRzG5XOyaCw3PHcO0XrrEy65a_xwPY8jD4a1-JGYntvIGqwQqEMHoMV2fr51ZQszc06pF9-h1uWgdnsqPGdEOJy.jpg" alt="Living Undocumented (2019)">
+                <div class="rating-container small"><span class="font-weight-bold">5.0</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Docuseries</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">Living Undocumented</a></strong><br>2019</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/81094801-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/81094801-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/81094801-us.jpg" alt="Ready to Mingle (2019)">
+        </picture>-->
+        <img class="poster" src="img/AAAABVcpEPOFl3yGCNvxxhRQqgtir4LX4ozYtBbR4Xk4ryKHYHbCZAQ-iyxkh-lBJSHNVi-gCzE0PapXqGe78rvbUJJ7eJotmxV_RyiQNVnDeK7w2F7a43EVtqZlVpsm.jpg" alt="Ready to Mingle (2019)">
+                <div class="rating-container small"><span class="font-weight-bold">6.1</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Comedies</span>
+                  <span class="d-block font-weight-bold small">International Movies</span>
+                  <span class="d-block font-weight-bold small">Romantic Movies</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">Ready to Mingle</a></strong><br>2019</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/81191195-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/81191195-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/81191195-us.jpg" alt="Salam - The First ****** Nobel Laureate (2018)">
+        </picture>-->
+        <img class="poster" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABZDu_XbFcJUf0x13lRnkK8Til9afyxHaBI59GeyXeowWTuLRzN4cVgulLLb-v8WCQ09LPre-s2b6gMn-KTYHJEsSeNw.jpg" alt="Salam - The First ****** Nobel Laureate (2018)">
+                <div class="rating-container small"><span class="font-weight-bold">8.0</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Documentaries</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">Salam - The First ****** Nobel Laureate</a></strong><br>2018</p>
+  </div>
+</div>        <div class="row">
+          <div class="col-12 mb-2">
+            <h2>
+            October 1            </h2>
+          </div>
+        </div>
+        <div class="row">  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/81168338-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/81168338-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/81168338-us.jpg" alt="300 Miles to Heaven (1989)">
+        </picture>-->
+        <img class="poster" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABdQpvPhnRWkGUBaqyU_Re5N1ZKg5dT6mvnbK2GXueZp-rHJ01j-DAYEkqCWwznpWzI84exwYfukbDkQm5db4MLs7fLs.jpg" alt="300 Miles to Heaven (1989)">
+                <div class="rating-container small"><span class="font-weight-bold">6.6</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Dramas</span>
+                  <span class="d-block font-weight-bold small">International Movies</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">300 Miles to Heaven</a></strong><br>1989</p>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="poster-container">
+      <a class="poster-link" href="index.html">
+        <!--<picture>
+          <source srcset="https://flixable.b-cdn.net/small/81103033-us.webp" type="image/webp">
+          <source srcset="https://flixable.b-cdn.net/small/81103033-us.jpg" type="image/jpeg">
+          <img class="poster" src="https://flixable.b-cdn.net/small/81103033-us.jpg" alt="A.M.I. (2019)">
+        </picture>-->
+        <img class="poster" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABd5zl0oigcVYIs_7a4X6e3OCEYsv696X41i2-KaIUL7YYqyG7qEdoQbXvUFoYwXSU_IvtCkF_qYRvv-6p9DOOaDqTlE.jpg" alt="A.M.I. (2019)">
+                <div class="rating-container small"><span class="font-weight-bold">4.7</span><span>/10</span></div>
+                <div class="overlay d-none d-lg-block text-center">
+                  <span class="d-block font-weight-bold small mt-3">Horror Movies</span>
+                </div>
+      </a>
+    </div>
+    <p><strong><a href="index.html">A.M.I.</a></strong><br>2019</p>
+  </div>
+</div>        <div class="row">
+          <div class="col-12 mb-3 text-center" id="showing">
+            Showing 1 to 40 of 5,755 titles          </div>
+        </div>
+          <nav aria-label="Page navigation">
+    <ul class="pagination mb-4 justify-content-center">
+      <li class="page-item disabled"><a class="page-link" href="index.html">&laquo;</a></li>
+      <li class="page-item active"><a class="page-link" href="index.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="index.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="index.html">3</a></li>
+            <li class="page-item"><a class="page-link" href="index.html">4</a></li>
+            <li class="page-item"><a class="page-link" href="index.html">5</a></li>
+            <li class="page-item"><a class="page-link" href="index.html">144</a></li>
+            <li class="page-item"><a class="page-link" href="index.html">&raquo;</a></li>
+    </ul>
+  </nav>
+            <div class="row justify-content-center text-center">
+             <div class="col mb-2">
+               <script async src="pagead/js/adsbygoogle.js"></script>
+               <!-- Flixable - Responsive -->
+               <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-7234786419871369"
+                 data-ad-slot="1479555091"
+data-ad-format="auto"
+data-full-width-responsive="true">
+</ins>
+               <script>
+               (adsbygoogle = window.adsbygoogle || []).push({});
+               </script>
+             </div>
+           </div>        <hr>
+      </div> <!-- /container -->
+    </main>
+    <footer class="container">
+      <div class="row mb-3">
+        <div class="col-4">&copy; 2019 <a href="index.html">Flixable</a></div>
+        <div class="col-8 text-right">
+          <a href="index.html">About Us</a>
+          <span class="mx-1">|</span>
+          <a href="index.html">Contact Us</a>
+          <span class="mx-1">|</span>
+          <a href="index.html">Privacy Policy</a>
+          <span class="mx-1">|</span>
+          <a href="index.html">Other Countries</a>
+        </div>
+      </div>
+    </footer>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="ajax/libs/popper-js/1-12-9/umd/popper.min.js"></script>
+    <script src="bootstrap/4-3-1/js/bootstrap.min.js"></script>
+    <script src="ajax/libs/bootstrap-slider/10-0-0/bootstrap-slider.min.js"></script>
+            <script src="typeahead.bundle.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      var titles = new Bloodhound({
+        datumTokenizer: Bloodhound.tokenizers.whitespace,
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        remote: {
+          url: '/search.php?country=us&query=%QUERY',
+          wildcard: '%QUERY'
+        }
+      });
+      $("input.typeahead").typeahead(null, {
+        name: 'search',
+        display: 'title',
+        source: titles,
+        templates: {
+          suggestion: function(data){
+            return '<a href="/title/' + data.id + '/">' + data.title + '</a>';
+          }
+        }
+      });
+      $(window).on("hashchange", function(){
+        if(location.hash === '#submitContainer'){
+                    window.scrollBy(0, -27);
+                  }
+        else if(location.hash === '#filterContainer'){
+          window.scrollBy(0, -63);
+        }
+      }).trigger("hashchange");
+      var pathname = window.location.pathname;
+      $(".navbar-nav > li > a[href=\"" + pathname + "\"]").parent().addClass("active");
+      $(document).click(function(event){
+        if(event.isTrigger){
+          return;
+        }
+        if(!$(".search-form").is(event.target) && $(".search-form").has(event.target).length == 0 && !$(".search-input").hasClass("d-none")){
+          $(".search-button").click();
+        }
+        if(!$(".navbar").is(event.target) && ($(".navbar").has(event.target).length == 0 || $(".search-form").has(event.target).length > 0) && $(".navbar-collapse").hasClass("collapse show")){
+          $(".navbar-toggler").click();
+        }
+      });
+      $(".search-button").click(function(event){
+        if(event.isTrigger || $(".search-input").hasClass("d-none") || $(".tt-input").val() == ''){
+          event.preventDefault();
+        }
+        else{
+          return;
+        }
+        $(".search-input").toggleClass("d-none");
+        $(".search-button").toggleClass("search-button-expanded");
+        if(!$(".search-input").hasClass("d-none")){
+                    $(".search-input").css("width", "auto");
+                    $(".search-input").focus();
+        }
+        else{
+          $(this).blur();
+        }
+      });
+            $("#amazon").click(function(){
+        event.preventDefault();
+        $.post("/scripts/save.php", {mode: 4});
+        var url = $(this).prop("href");
+        window.open(url, "_blank");
+      });
+                  $(".my-list").click(function(event){
+        event.preventDefault();
+        $.post("/scripts/save.php", {mode: 0});
+        $("#loginModal").modal();
+        $.post("/scripts/session.php", {url: "/my-list/"});
+      });
+      $("#facebookButton").click(function(){
+        $.post("/scripts/save.php", {mode: 2});
+      });
+      $("#googleButton").click(function(){
+        $.post("/scripts/save.php", {mode: 3});
+      });
+      $("#register").click(function(){
+        $.post("/scripts/save.php", {mode: 1});
+      });
+                  $(".read-more").click(function(){
+        $(this).toggleClass("read-more");
+        if($(this).hasClass("read-more")){
+          $(this).text("Read More...");
+        }
+        else{
+          $(this).text("Read Less...");
+        }
+      });
+                  $("#yearSlider").slider({
+        tooltip: 'hide'
+      });
+      $("#yearSlider").slider().on("slide", function(){
+        var values = $("#yearSlider").slider("getValue");
+        $("#yearStart").text(values[0]);
+        $("#yearEnd").text(values[1]);
+      });
+      $("#submit").click(function(){
+        var audio = $("#audio").val();
+        var genre = $("#genre").val();
+        var order = $("#orderBy").val();
+        var rating = $("#rating").val();
+        var values = $("#yearSlider").slider("getValue");
+                var container = '#filterContainer';
+                var originals = '';
+        if(audio){
+          audio = '&audio=' + audio;
+        }
+        if(genre){
+          genre = '/genre/' + genre + '/';
+        }
+                window.location.href = window.location.protocol + '//' + window.location.hostname + originals + genre + '?min-rating=' + rating + audio + '&min-year=' + values[0] + '&max-year=' + values[1] + '&order=' + order + container;
+      });
+                                  });
+            </script>
+  <center><font size="2">This is the free demo result. For a full version of this website, please go to  <a href="https://www6.waybackmachinedownloader.com/website-downloader-online/scrape-all-files/">https://www6.waybackmachinedownloader.com/website-downloader-online/scrape-all-files/</a></font></center></body>
+</html>

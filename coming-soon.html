@@ -1,0 +1,1313 @@
+    <!doctype html>
+<html lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="gtag/js_id_UA-112286258-1.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-112286258-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Are you wondering what&#039;s new – or what&#039;s best – on Netflix? Flixable is a Netflix search engine that offers a complete, searchable and browsable list of all the movies and TV shows that are currently streaming on Netflix in the U.S.">
+    <meta property="fb:app_id" content="1606326079643623">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Coming Soon to Netflix | Flixable">
+    <meta property="og:description" content="Are you wondering what&#039;s new – or what&#039;s best – on Netflix? Flixable is a Netflix search engine that offers a complete, searchable and browsable list of all the movies and TV shows that are currently streaming on Netflix in the U.S.">
+    <meta property="og:url" content="https://flixable.com/coming-soon/">
+    <meta property="og:image" content="http://flixable.com/images/logo-500px.png">
+    <link rel="icon" href="favicon.png">
+    <title>Coming Soon to Netflix | Flixable</title>
+    <link rel="stylesheet" href="bootstrap/4-3-1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="rfs.min.css">
+    <link rel="stylesheet" href="ajax/libs/bootstrap-slider/10-0-0/css/bootstrap-slider.css">
+    <link rel="stylesheet" href="releases/v5-6-1/css/all.css">
+        <link href="style.css" rel="stylesheet">
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1706392859389035');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="tr_id_1706392859389035_ev_PageView_noscript_1.gif"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+      </head>
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id){
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=1606326079643623';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Sign In</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 mb-3 text-center">
+                <a href="https://www.facebook.com/v3.2/dialog/oauth?client_id=324240451429392&state=34084575a82ad5cd937580992fae8dd1&response_type=code&sdk=php-sdk-5.7.0&redirect_uri=https%3A%2F%2Fflixable.com%2Fcallback.php%3Fprovider%3Dfacebook&scope=email">
+                  <div id="facebookButton">
+                    <span class="icon"></span>
+                    <span class="text">Log In With Facebook</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 text-center">
+                <a href="https://accounts.google.com/o/oauth2/auth?response_type=code&access_type=online&client_id=860528796932-0te91jl5tghjj51o6jf97pb1esnu88au.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fflixable.com%2Fcallback.php%3Fprovider%3Dgoogle&state&scope=email%20profile&approval_prompt=auto">
+                  <div id="googleButton">
+                    <span class="icon"></span>
+                    <span class="text">Log In With Google</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand mr-lg-3" href="index.html"><img src="images/logo.svg" style="height:28px; width:125px;"  alt="List of Movies and TV Shows on Netflix | Flixable"></a>
+      <div class="d-flex order-lg-1 ml-auto">
+        <form action="index.html" method="get" class="form-inline search-form">
+          <div class="input-group">
+            <input class="form-control d-none search-input typeahead" type="text" value="" name="s" placeholder="Title, person" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-danger search-button" type="submit"><span class="fas fa-search"></span></button>
+            </div>
+          </div>
+        </form>
+                <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link px-2" id="register" href="javascript:;" data-toggle="modal" data-target="#loginModal">Sign In</a>
+          </li>
+        </ul>
+              </div>
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Browse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="popular.html">Popular</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="coming-soon.html">Coming Soon</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="leaving-netflix.html">Leaving</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="netflix-originals.html">Originals</a>
+          </li>
+                    <li class="nav-item">
+            <a class="nav-link" href="guides.html">Guides</a>
+          </li>
+                    <li class="nav-item">
+            <a class="nav-link my-list" href="my-list.html">My List</a>
+          </li>
+                  </ul>
+      </div>
+    </nav>
+                <div class="container">
+        <div class="row justify-content-center text-center">
+             <div class="col mt-4">
+               <script async src="pagead/js/adsbygoogle.js"></script>
+               <!-- Flixable - Responsive -->
+               <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-7234786419871369"
+                 data-ad-slot="1479555091"
+data-ad-format="auto"
+data-full-width-responsive="true">
+</ins>
+               <script>
+               (adsbygoogle = window.adsbygoogle || []).push({});
+               </script>
+             </div>
+           </div>      </div>
+              <main role="main">
+      <div class="container mt-4">
+        <div class="row mb-2">
+          <div class="col-12">
+            <h1>Coming Soon to Netflix</h1>
+          </div>
+        </div>
+        <hr>
+                  <div class="row">
+            <div class="col-12 mb-2">
+              <h2>
+              October 11              </h2>
+            </div>
+          </div>
+          <div class="row">  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81132441-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81132441-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/81132441-us.jpg" alt="Bygones Be Bygones">
+      </picture>-->
+      <img class="poster-large" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABS6QZABMpqNcHEDKzF9JIGxkPu0NZZrKBmLgEQmWXLiwo0MxP2sGogXn_xHjqqzQCOtmMghbk9owNbY_9dy9aRgyxYwg.jpg" alt="Bygones Be Bygones">
+          </div>
+    <p><strong><!--<a href="/title/81132441/">-->Bygones Be Bygones<!--</a>--></strong></p>
+    <p>A mother's plan to find her bachelor son a match derails when a new prospect turns up and sinister schemes unfold.</p>
+        <p class="text-muted">
+        <span>Opposites-Attract</span>
+        <span class="mx-2">&middot;</span>
+        <span>Romantic</span>
+        <span class="mx-2">&middot;</span>
+        <span>Turkish</span>
+        </p>
+  </div>
+  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81078819-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81078819-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/81078819-us.jpg" alt="El Camino: A Breaking Bad Movie">
+      </picture>-->
+      <img class="poster-large" src="img/AAAABdwQwzyKuX90sjDDXkHOrbHEe2LWieqTdXgPPpotANV3IQRqz0Lrwp3sFEd093Jf_coljQXTO4w9Y1DsleARXAWojTjoE31yEI-aSpB8Y6A2yClSKgtyf6gNUNbdmw.jpg" alt="El Camino: A Breaking Bad Movie">
+          </div>
+    <p><strong><!--<a href="/title/81078819/">-->El Camino: A Breaking Bad Movie<!--</a>--></strong></p>
+    <p>Fugitive Jesse Pinkman attempts to outrun his past. Written and directed by "Breaking Bad" creator Vince Gilligan, starring Aaron Paul.</p>
+        <p class="text-muted">
+        <span>Dark</span>
+        <span class="mx-2">&middot;</span>
+        <span>Thriller</span>
+        <span class="mx-2">&middot;</span>
+        <span>Underdog</span>
+        </p>
+  </div>
+</div><div class="row">  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80223997-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80223997-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/80223997-us.jpg" alt="Fractured">
+      </picture>-->
+      <img class="poster-large" src="img/AAAABcQlFqqcl3fiMQ0yiEWNdCps6zS-ztFV5SjtMw6h0oDfmTIXAEg-g4J-Mq3MAEuPO4GrZVfT_3TRLMvTH_uJXQgqVJL4VG7f3UC5-HXu82DX9Fnh9ei45jYKddHlQQ.jpg" alt="Fractured">
+          </div>
+    <p><strong><!--<a href="/title/80223997/">-->Fractured<!--</a>--></strong></p>
+    <p>After his wife and injured daughter disappear from an ER, a man conducts a panicked search and becomes convinced the hospital is hiding something.</p>
+        <p class="text-muted">
+        <span>Halloween Favorite</span>
+        <span class="mx-2">&middot;</span>
+        <span>Ominous</span>
+        <span class="mx-2">&middot;</span>
+        <span>Thriller</span>
+        </p>
+  </div>
+  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80179905-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80179905-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/80179905-us.jpg" alt="Insatiable">
+      </picture>-->
+      <img class="poster-large" src="img/AAAABZ-hFUrRhwfXnv-BtUciueL5KSyML15fc1wXhCyxJ2BrvKLhqYN3oe4_gnA83k_LoMeyXnQQC1--9Wd0W2eTBZFyqGkxEDoUw0JMYL0w5cNm-uhQEcXlGXrVVanfqg.jpg" alt="Insatiable">
+            <div class="rating-container-large small"><span class="font-weight-bold">New Season</span></div>
+          </div>
+    <p><strong><!--<a href="/title/80179905/">-->Insatiable<!--</a>--></strong></p>
+    <p>A bullied teenager turns to beauty pageants as a way to exact her revenge, with the help of a disgraced coach who soon realizes he's in over his head.</p>
+        <p class="text-muted">
+        <span>Absurd</span>
+        <span class="mx-2">&middot;</span>
+        <span>LGBTQ</span>
+        <span class="mx-2">&middot;</span>
+        <span>Teen</span>
+        </p>
+  </div>
+</div><div class="row">  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81110383-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81110383-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/81110383-us.jpg" alt="The Awakening of Motti Wolkenbruch">
+      </picture>-->
+      <img class="poster-large" src="img/AAAABUHMEmzp_lrtqz1JJ8hVxsy9nEbdazwHFk_D0LW_pTw4c3K6mgYpGu-eVGVCPFryRbGdGeuEQbRwDdSW348flyPz0vqi1HdZWTTI0ewnFqfjhIoapW_dfzTJzYF6EA.jpg" alt="The Awakening of Motti Wolkenbruch">
+          </div>
+    <p><strong><!--<a href="/title/81110383/">-->The Awakening of Motti Wolkenbruch<!--</a>--></strong></p>
+    <p>Pressured to marry a nice Orthodox Jewish woman, Motti is thrown for a loop when he falls for classmate Laura, who his mother will never approve of.</p>
+        <p class="text-muted">
+        <span>Dramedy</span>
+        <span class="mx-2">&middot;</span>
+        <span>Romantic</span>
+        <span class="mx-2">&middot;</span>
+        <span>Swiss</span>
+        </p>
+  </div>
+  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81191666-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81191666-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/81191666-us.jpg" alt="The Bling Lagosians">
+      </picture>-->
+      <img class="poster-large" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABfWHYJy2W8mIaEHuDGo0f39at6OwFIdW8WK0LKn1kXMZdnH3g8PLIkgw5h_ySA-PQkPyLvU9aatYTv4x4_4RCsrjEsuX.jpg" alt="The Bling Lagosians">
+          </div>
+    <p><strong><!--<a href="/title/81191666/">-->The Bling Lagosians<!--</a>--></strong></p>
+    <p>With a matriarch bent on having a lavish 51st birthday party, her family's debt is on the verge of exposure, threatening their business &ndash; and legacy.</p>
+        <p class="text-muted">
+        <span>Drama</span>
+        <span class="mx-2">&middot;</span>
+        <span>Nollywood</span>
+        </p>
+  </div>
+</div><div class="row">  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81133621-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81133621-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/81133621-us.jpg" alt="The Forest of Love">
+      </picture>-->
+      <img class="poster-large" src="img/AAAABTnuNW6U0_H1eKbvFvlSnsBo9WjZJkE1b-ALVSa2No5PM6a_gvg6vZTHX8JBpxc6aIQo1gUHsHPOCl2owtrgpvjOaSuBeoH8x8K1T0v8uZwrfV56gnJDkkTvYaQGUQ.jpg" alt="The Forest of Love">
+          </div>
+    <p><strong><!--<a href="/title/81133621/">-->The Forest of Love<!--</a>--></strong></p>
+    <p>A con man and a would-be filmmaking crew force themselves into the lives of two grief-scarred young women. But nothing is as it seems.</p>
+        <p class="text-muted">
+        <span>Con Game</span>
+        <span class="mx-2">&middot;</span>
+        <span>Gruesome</span>
+        <span class="mx-2">&middot;</span>
+        <span>Showbiz</span>
+        </p>
+  </div>
+  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81038598-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81038598-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/81038598-us.jpg" alt="The Influence">
+      </picture>-->
+      <img class="poster-large" src="img/AAAABeM92qGGlFSmiMSue81ffObFRFgl_51hfz7OLo5cnPnBRJvEEcH3eIriETdSy34TOBHKOv9dIn6e4ij54cZT3MCAkOVN4z7x9wSzpGthUkcgkFBTNucwEFXCmem9iQ.jpg" alt="The Influence">
+          </div>
+    <p><strong><!--<a href="/title/81038598/">-->The Influence<!--</a>--></strong></p>
+    <p>Back in her childhood home to help her sister care for their comatose mother, Alicia must face a dark force from her past that now threatens her child.</p>
+        <p class="text-muted">
+        <span>Evil Kid</span>
+        <span class="mx-2">&middot;</span>
+        <span>Family Reunion</span>
+        <span class="mx-2">&middot;</span>
+        <span>Horror</span>
+        </p>
+  </div>
+</div><div class="row">  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80212481-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80212481-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/80212481-us.jpg" alt="YooHoo to the Rescue">
+      </picture>-->
+      <img class="poster-large" src="img/AAAABSGGHyUjSP-MYIyAXfMGvcKOQGbpdEFNMnRxbd57YjELhYOFO4gSuJClZ94Bk-oDmQDwsevNfHP_BI4sil4BAIbf7Dy9rmrwBgn4tv5mJQeEkWE_WlBPA_ZxHrukkw.jpg" alt="YooHoo to the Rescue">
+            <div class="rating-container-large small"><span class="font-weight-bold">New Season</span></div>
+          </div>
+    <p><strong><!--<a href="/title/80212481/">-->YooHoo to the Rescue<!--</a>--></strong></p>
+    <p>In a series of magical missions, quick-witted YooHoo and his can-do crew travel the globe to help animals in need.</p>
+        <p class="text-muted">
+        <span>Gentle</span>
+        <span class="mx-2">&middot;</span>
+        <span>Teamwork</span>
+        <span class="mx-2">&middot;</span>
+        <span>Wild Kingdom</span>
+        </p>
+  </div>
+          </div>
+                    <div class="row">
+            <div class="col-12 mb-2">
+              <h2>
+              October 12              </h2>
+            </div>
+          </div>
+          <div class="row">  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81034012-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81034012-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/81034012-us.jpg" alt="Street Flow">
+      </picture>-->
+      <img class="poster-large" src="img/AAAABbEu-UNe6vMEJH2-GZLkKtV4fHoEiUMF9CcTjneBFfxwlqVn5MxL3l4McIbYPb9qvEiYPFTtHHlgZ1KCxHISm8KJAvcPlN44Mf-nKLI9SyAVS_htQNCCzcfXl0s68Q.jpg" alt="Street Flow">
+          </div>
+    <p><strong><!--<a href="/title/81034012/">-->Street Flow<!--</a>--></strong></p>
+    <p>Three brothers &ndash; a gangster, a scholar and an impressionable teen &ndash; learn hard lessons in the gritty suburbs while searching for the means to survive.</p>
+        <p class="text-muted">
+        <span>Fight the System</span>
+        <span class="mx-2">&middot;</span>
+        <span>French</span>
+        <span class="mx-2">&middot;</span>
+        <span>Immigrant Life</span>
+        </p>
+  </div>
+          </div>
+                    <div class="row">
+            <div class="col-12 mb-2">
+              <h2>
+              October 14              </h2>
+            </div>
+          </div>
+          <div class="row">  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80990869-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80990869-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/80990869-us.jpg" alt="Martin Matte: La vie, la mort...eh la la..!">
+      </picture>-->
+      <img class="poster-large" src="img/AAAABRQRPiEGag4PI8-ul7dgUdH7ATJfIKrZ-UUBQJayD9w_Dzmr0cBMxURhRrNiOBWca56knuQnRMwqyXV0N7tbqioTG1Bi5E11EgztrLl6YOpC3d3AW5sUMQdtniS5vQ.jpg" alt="Martin Matte: La vie, la mort...eh la la..!">
+          </div>
+    <p><strong><!--<a href="/title/80990869/">-->Martin Matte: La vie, la mort...eh la la..!<!--</a>--></strong></p>
+    <p>Quebecois comedy star Martin Matte serves up embarrassing personal stories, a solution for social media trolls and more in this unpredictable special.</p>
+        <p class="text-muted">
+        <span>Canadian</span>
+        <span class="mx-2">&middot;</span>
+        <span>Parenthood</span>
+        <span class="mx-2">&middot;</span>
+        <span>Stand-Up</span>
+        </p>
+  </div>
+          </div>
+                    <div class="row">
+            <div class="col-12 mb-2">
+              <h2>
+              October 15              </h2>
+            </div>
+          </div>
+          <div class="row">  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80176234-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80176234-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/80176234-us.jpg" alt="Black Money Love">
+      </picture>-->
+      <img class="poster-large" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABRyOygbpU-6JYou0BOBPcWeMati0YpuL3GxKQLypvx2x-5eet_Iq5mWa3bzCzrnfLvUEMfO8b0RF8FKFvQq6INEwgJFO.jpg" alt="Black Money Love">
+          </div>
+    <p><strong><!--<a href="/title/80176234/">-->Black Money Love<!--</a>--></strong></p>
+    <p>After a cop's fiancée and a jewelry designer's father are found dead together, the two bereaved ones face a perilous aftermath of a theft gone wrong.</p>
+        <p class="text-muted">
+        <span>Drama</span>
+        <span class="mx-2">&middot;</span>
+        <span>TV</span>
+        <span class="mx-2">&middot;</span>
+        <span>Turkish</span>
+        </p>
+  </div>
+  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80992769-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80992769-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/80992769-us.jpg" alt="Dark Crimes">
+      </picture>-->
+      <img class="poster-large" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABWQC76cX0mkH8PVdWdXHwj5WuZxKwFKQiZEHwMJx1XbwwAht3k4eFv2_xyH9tHhgdrZNR8rCGGp-KRuVvjYQu0Tgisn1.jpg" alt="Dark Crimes">
+          </div>
+    <p><strong><!--<a href="/title/80992769/">-->Dark Crimes<!--</a>--></strong></p>
+    <p>A detective on a cold murder case discovers that a famous writer’s latest novel contains details chillingly similar to the crime he’s investigating.</p>
+        <p class="text-muted">
+        <span>Investigation</span>
+        <span class="mx-2">&middot;</span>
+        <span>Slow Burn</span>
+        <span class="mx-2">&middot;</span>
+        <span>Thriller</span>
+        </p>
+  </div>
+</div><div class="row">  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80159876-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80159876-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/80159876-us.jpg" alt="Girls und Panzer der Film">
+      </picture>-->
+      <img class="poster-large" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABUQqtNQrowAarLm9iIlFg1u6DX2pFygcbMmtWeUgScZLsc7WmH48VmLkdYbKacc-pivk6yDY-9D5dmf_MXTuN2SKXqrY.jpg" alt="Girls und Panzer der Film">
+          </div>
+    <p><strong><!--<a href="/title/80159876/">-->Girls und Panzer der Film<!--</a>--></strong></p>
+    <p>The girls of Ōarai High must face off against a formidable university team in a fierce tank battle to once again avoid closure of their school.</p>
+        <p class="text-muted">
+        <span>Action Anime</span>
+        <span class="mx-2">&middot;</span>
+        <span>Anime Feature</span>
+        <span class="mx-2">&middot;</span>
+        <span>High School</span>
+        </p>
+  </div>
+  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81154549-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81154549-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/81154549-us.jpg" alt="Magical Andes">
+      </picture>-->
+      <img class="poster-large" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABY0MSMmYbRiF1XJ_YbNLzdY2_f8Unys_ShO6jQNEF4y4EvdAKWKMG_5PmpIANoMFKhGzjtuFMe328sPSGGFIzw7tLiC-.jpg" alt="Magical Andes">
+          </div>
+    <p><strong><!--<a href="/title/81154549/">-->Magical Andes<!--</a>--></strong></p>
+    <p>From Argentina to Colombia, this stunning documentary follows five characters who share their deep connection to South America's majestic mountains.</p>
+        <p class="text-muted">
+        <span>Docuseries</span>
+        <span class="mx-2">&middot;</span>
+        <span>Miniseries</span>
+        <span class="mx-2">&middot;</span>
+        <span>Social & Cultural</span>
+        </p>
+  </div>
+</div><div class="row">  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/70267476-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/70267476-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/70267476-us.jpg" alt="Saint Seiya">
+      </picture>-->
+      <img class="poster-large" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABcEq3lHKF4UkdJiIh0F5_H3lW6_OxRwwZLylxNGYWaQIm9CSUSEHZcOg2Zm2o8P15VjRv401PJn6bTP2_IOkZ66N0uU4.jpg" alt="Saint Seiya">
+          </div>
+    <p><strong><!--<a href="/title/70267476/">-->Saint Seiya<!--</a>--></strong></p>
+    <p>A band of young warriors in magical armor vow to defend the reincarnation of Greek goddess Athena against evil forces and to return her to the throne.</p>
+        <p class="text-muted">
+        <span>Fantasy Anime</span>
+        <span class="mx-2">&middot;</span>
+        <span>Middle Ages</span>
+        <span class="mx-2">&middot;</span>
+        <span>Shounen</span>
+        </p>
+  </div>
+          </div>
+                    <div class="row">
+            <div class="col-12 mb-2">
+              <h2>
+              October 16              </h2>
+            </div>
+          </div>
+          <div class="row">  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81077044-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81077044-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/81077044-us.jpg" alt="Another Miss Oh">
+      </picture>-->
+      <img class="poster-large" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABZDuy3J3jNlnj-wm3ZeGDGzttRy91lEta6WY9e2zwnq8oxtRxJNaTcoISfwlMvnAIFg-s5kjVExDhfi8TBKots6v2_KF.jpg" alt="Another Miss Oh">
+          </div>
+    <p><strong><!--<a href="/title/81077044/">-->Another Miss Oh<!--</a>--></strong></p>
+    <p>A sound director who suddenly starts getting visions of someone else’s future gets mired in the lives of two women, who happen to share the same name.</p>
+        <p class="text-muted">
+        <span>Korean</span>
+        <span class="mx-2">&middot;</span>
+        <span>Mistaken Identity</span>
+        <span class="mx-2">&middot;</span>
+        <span>Underdog</span>
+        </p>
+  </div>
+  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81081656-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81081656-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/81081656-us.jpg" alt="Ghosts of Sugar Land">
+      </picture>-->
+      <img class="poster-large" src="img/AAAABU9Dmn59jg1HMKcuCxuSezWpF5cFKjPo-syvqEXQhLykkvzCJXSqdY2f4TafIjAlqpLor2R7VX5NmIvmWoOSohUWa1NbYcK8KZs7MqwM9ZkAYB1E1edrIgdP9WCiuQ.jpg" alt="Ghosts of Sugar Land">
+          </div>
+    <p><strong><!--<a href="/title/81081656/">-->Ghosts of Sugar Land<!--</a>--></strong></p>
+    <p>Shocked when their friend embraces extremism, a group of Muslim Americans in Texas recount their time with him and theories about his fate.</p>
+        <p class="text-muted">
+        <span>Art House</span>
+        <span class="mx-2">&middot;</span>
+        <span>Provocative</span>
+        <span class="mx-2">&middot;</span>
+        <span>Sundance Film Festival</span>
+        </p>
+  </div>
+</div><div class="row">  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81053240-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81053240-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/81053240-us.jpg" alt="Park Na-rae: Glamour Warning">
+      </picture>-->
+      <img class="poster-large" src="img/AAAABV2wrFOcTcMfsoxmzHgO6okpViNxsBo1QEswp_XxQvpShFAZePC4CM9p0P6ueIHUNgCaRAmw8Bzmf3SjJRlgeNgJElC5QHn-mQI7QZ2HRCiJqXPxmu3JkG-Nlq2M5g.jpg" alt="Park Na-rae: Glamour Warning">
+          </div>
+    <p><strong><!--<a href="/title/81053240/">-->Park Na-rae: Glamour Warning<!--</a>--></strong></p>
+    <p>Korea’s beloved comedian and favorite big sister figure talks sex, relationships and celebrity life. And she’s sassier and dirtier than ever before.</p>
+        <p class="text-muted">
+        <span>Korean</span>
+        <span class="mx-2">&middot;</span>
+        <span>Raunchy</span>
+        <span class="mx-2">&middot;</span>
+        <span>Stand-Up</span>
+        </p>
+  </div>
+  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81167011-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81167011-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/81167011-us.jpg" alt="Second 20s">
+      </picture>-->
+      <img class="poster-large" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABbJ55Rsp7XdgP_SfdW3seUvF5IaZP4DHA-KsaxRPmMA5ezYr2LVZ5pksf-QoZYsT7VQfniQOrGkT3iuS3RGLmA0r5MxJ.jpg" alt="Second 20s">
+          </div>
+    <p><strong><!--<a href="/title/81167011/">-->Second 20s<!--</a>--></strong></p>
+    <p>Facing major changes, a mother realizes it's time to live for herself and decides to enroll in college, where she finds her dream as well as new love.</p>
+        <p class="text-muted">
+        <span>Family Relationship</span>
+        <span class="mx-2">&middot;</span>
+        <span>First Love</span>
+        <span class="mx-2">&middot;</span>
+        <span>Korean</span>
+        </p>
+  </div>
+</div><div class="row">  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80043834-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80043834-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/80043834-us.jpg" alt="Sinister 2">
+      </picture>-->
+      <img class="poster-large" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABesHkThFOLPL0PI4uBeLL5s9kk8Ulgm4WZ_nmoLikxYR0oFtTiQ2wL9fmlpvJUVY7uLd7RjAlEHW1oED0L0Kov5KqIHg.jpg" alt="Sinister 2">
+          </div>
+    <p><strong><!--<a href="/title/80043834/">-->Sinister 2<!--</a>--></strong></p>
+    <p>A single mother and her twin sons move into a rural house, unaware of its history of being inhabited by an evil spirit that preys upon young children.</p>
+        <p class="text-muted">
+        <span>Evil Kid</span>
+        <span class="mx-2">&middot;</span>
+        <span>Horror</span>
+        <span class="mx-2">&middot;</span>
+        <span>Scary</span>
+        </p>
+  </div>
+  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81157840-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81157840-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/81157840-us.jpg" alt="The Game Changers">
+      </picture>-->
+      <img class="poster-large" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABV6uU50N30K1vdUyHYrOVpERFUI6EV382T1VpVL9g_x7KcYVlV9zd6TjJcLfnimWxr2lBYx8kZAjQd26OEcoSmm9VPKd.jpg" alt="The Game Changers">
+          </div>
+    <p><strong><!--<a href="/title/81157840/">-->The Game Changers<!--</a>--></strong></p>
+    <p>Special Forces trainer James Wilks asks elite athletes to compare the merits of meat, protein and plants for building strength. Spoiler: plants win.</p>
+        <p class="text-muted">
+        <span>Food & Wine</span>
+        <span class="mx-2">&middot;</span>
+        <span>Lifestyle</span>
+        <span class="mx-2">&middot;</span>
+        <span>Mind & Body</span>
+        </p>
+  </div>
+</div>          <div class="row">
+            <div class="col-12 mb-2">
+              <h2>
+              October 18              </h2>
+            </div>
+          </div>
+          <div class="row">  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81172895-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81172895-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/81172895-us.jpg" alt="93 Days">
+      </picture>-->
+      <img class="poster-large" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABad12CN5l1kgDghAbr1BwdBfX-ASxnVZEuVUcJNJXAvbTs9vwUd40PkqdeQNNz4cugiPxwIb0_AwKr8cx7Q2jtR5znqo.jpg" alt="93 Days">
+          </div>
+    <p><strong><!--<a href="/title/81172895/">-->93 Days<!--</a>--></strong></p>
+    <p>Heroic health workers fight to contain an Ebola outbreak when a patient arrives in Lagos with symptoms of the deadly virus. Based on a true story.</p>
+        <p class="text-muted">
+        <span>Based on Real Life</span>
+        <span class="mx-2">&middot;</span>
+        <span>Nollywood</span>
+        <span class="mx-2">&middot;</span>
+        <span>Thriller</span>
+        </p>
+  </div>
+  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81192130-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81192130-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/81192130-us.jpg" alt="ChuChu TV Kids Songs, Learning Videos & Bedtime Stories">
+      </picture>-->
+      <img class="poster-large" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABf14Gdeq2GebzYfJxm2GR6yzpGqr3oBnled2CBc-MP39wsv3hG65_P4v9uLA6mNTXHcmTFfy358iPh7MVwNsAyihOxYL.jpg" alt="ChuChu TV Kids Songs, Learning Videos & Bedtime Stories">
+          </div>
+    <p><strong><!--<a href="/title/81192130/">-->ChuChu TV Kids Songs, Learning Videos & Bedtime Stories<!--</a>--></strong></p>
+    <p>This educational series for tiny tots features a toe-tapping spin on nursery rhymes with upbeat tunes and a diverse set of easy-to-follow lessons.</p>
+        <p class="text-muted">
+        <span>Educational</span>
+        <span class="mx-2">&middot;</span>
+        <span>Gentle</span>
+        <span class="mx-2">&middot;</span>
+        <span>Indian</span>
+        </p>
+  </div>
+</div><div class="row">  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80206910-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80206910-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/80206910-us.jpg" alt="Eli">
+      </picture>-->
+      <img class="poster-large" src="img/AAAABTiAPi8_t4U67nSyk4qVFPOnjZoWvWv2F4d1MkdDivwpMDZd7SvBX7AwQUinHT1TgMhfhlnDMRQyf59oUWNIURbwIuFTP5W_zK-86-vMoe24xkK2w8nm7LEpF7zNbg.jpg" alt="Eli">
+          </div>
+    <p><strong><!--<a href="/title/80206910/">-->Eli<!--</a>--></strong></p>
+    <p>With his desperate parents in tow, an 11-year-old boy with a debilitating illness checks into an isolated clinic to undergo experimental therapy.</p>
+        <p class="text-muted">
+        <span>Halloween Favorite</span>
+        <span class="mx-2">&middot;</span>
+        <span>Haunted House</span>
+        <span class="mx-2">&middot;</span>
+        <span>Horror</span>
+        </p>
+  </div>
+  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81172905-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81172905-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/81172905-us.jpg" alt="In My Country">
+      </picture>-->
+      <img class="poster-large" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABe_C7cSumASN04ZrABURJyvdiIbMLLLw_fiB7V_Ee2AXtZSZhuh4Nhj_i20IH-MxZ0BavQU3AAUGknjtjAd2HGCmdK62.jpg" alt="In My Country">
+          </div>
+    <p><strong><!--<a href="/title/81172905/">-->In My Country<!--</a>--></strong></p>
+    <p>A teacher turns to a dubious man to raise money for her daughter's life-saving surgery, a crisis that is unexpectedly catapulted to a national stage.</p>
+        <p class="text-muted">
+        <span>Emotional</span>
+        <span class="mx-2">&middot;</span>
+        <span>Nollywood</span>
+        <span class="mx-2">&middot;</span>
+        <span>Social Issue Drama</span>
+        </p>
+  </div>
+</div><div class="row">  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80217627-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80217627-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/80217627-us.jpg" alt="Interior Design Masters">
+      </picture>-->
+      <img class="poster-large" src="img/AAAABdqY63rEnefQ47za_azGrUY9bQqic9JAW7172cUeLJwowleWNLObAdNQcCkxo3A3aqVcKlYDaWgcWxrZ4cKjLS65QBfzl9LPCoDOk2W0_zJvbwkuJjzmsNNM8iu7bg.jpg" alt="Interior Design Masters">
+          </div>
+    <p><strong><!--<a href="/title/80217627/">-->Interior Design Masters<!--</a>--></strong></p>
+    <p>Aspiring interior designers transform a variety of spaces from dowdy to delightful as they vie for a life-changing contract with a top London hotel.</p>
+        <p class="text-muted">
+        <span>British</span>
+        <span class="mx-2">&middot;</span>
+        <span>Makeover</span>
+        <span class="mx-2">&middot;</span>
+        <span>Reality TV</span>
+        </p>
+  </div>
+  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80178724-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80178724-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/80178724-us.jpg" alt="Living with Yourself">
+      </picture>-->
+      <img class="poster-large" src="img/AAAABQcXwKJZlpv2KsofmsT-l7HU7ndQL9T84YmNxWaN1x8opJDTOeuq9lqAGA-kKudAxlrsV_ddIoO9cvmH3N7PTtw6I2_NraPACvtQZI1UTOcaPECa5tYcvb-c5xrkjA.jpg" alt="Living with Yourself">
+          </div>
+    <p><strong><!--<a href="/title/80178724/">-->Living with Yourself<!--</a>--></strong></p>
+    <p>Burned out on life, Miles undergoes a strange procedure at a strip mall spa &ndash; and wakes to find he's been replaced by a better version of himself.</p>
+        <p class="text-muted">
+        <span>Deadpan</span>
+        <span class="mx-2">&middot;</span>
+        <span>Midlife Crisis</span>
+        <span class="mx-2">&middot;</span>
+        <span>Suburban Dysfunction</span>
+        </p>
+  </div>
+</div><div class="row">  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81132442-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81132442-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/81132442-us.jpg" alt="Love, Surreal and Odd">
+      </picture>-->
+      <img class="poster-large" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABVvLtGPneUX9JcKMs5our3D9rk5merJFviJnS1DADbovKDkGFrS_BPdHRGbI9c0Ev9UC-UpswxVp7smtHZ2F4MAGwTwa.jpg" alt="Love, Surreal and Odd">
+          </div>
+    <p><strong><!--<a href="/title/81132442/">-->Love, Surreal and Odd<!--</a>--></strong></p>
+    <p>When a group of people meets at the same party, they form four different relationships, each experiencing similar phases of love.</p>
+        <p class="text-muted">
+        <span>Comedy</span>
+        <span class="mx-2">&middot;</span>
+        <span>Romantic</span>
+        <span class="mx-2">&middot;</span>
+        <span>Turkish</span>
+        </p>
+  </div>
+  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80126646-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80126646-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/80126646-us.jpg" alt="MeatEater">
+      </picture>-->
+      <img class="poster-large" src="img/AAAABXaz7MG2U-rNBCUkEl67UzKjBLCFMAA3J72Z4GwIrTikU1KX0icWoU0soG6HKxunqeZaATuqO-ZECMgveHyFknrbguGpxfIdvBdrzFLrYgk9NdQYjpvJ7B-Z8Qh1_Q.jpg" alt="MeatEater">
+            <div class="rating-container-large small"><span class="font-weight-bold">New Season</span></div>
+          </div>
+    <p><strong><!--<a href="/title/80126646/">-->MeatEater<!--</a>--></strong></p>
+    <p>Hunter, author, cook and conservationist Steven Rinella treks into the world's most remote, beautiful regions, bringing game meat from field to table.</p>
+        <p class="text-muted">
+        <span>Docuseries</span>
+        <span class="mx-2">&middot;</span>
+        <span>Fishing</span>
+        <span class="mx-2">&middot;</span>
+        <span>Nature Doc</span>
+        </p>
+  </div>
+</div><div class="row">  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81172848-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81172848-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/81172848-us.jpg" alt="Moms at War">
+      </picture>-->
+      <img class="poster-large" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABQQGV30OwxdXuhlub-9lA-cG-YkSnpH6eoxkFKS3Zqh4ueIzXQI6RUmLTFeX2vWQK42a9tU3Urkpq5exENiHyElnF-Fk.jpg" alt="Moms at War">
+          </div>
+    <p><strong><!--<a href="/title/81172848/">-->Moms at War<!--</a>--></strong></p>
+    <p>Two fierce mothers become rivals when a school contest forces their kids, both model students, to compete against one another to be the best in class.</p>
+        <p class="text-muted">
+        <span>Gal Pals</span>
+        <span class="mx-2">&middot;</span>
+        <span>Goofy</span>
+        <span class="mx-2">&middot;</span>
+        <span>Nollywood</span>
+        </p>
+  </div>
+  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81193245-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81193245-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/81193245-us.jpg" alt="MONKART">
+      </picture>-->
+      <img class="poster-large" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABUatfB6T9QWtWNKfOcrkhQLJKX3gGOFncXbgmKDP1I2qEDX4YpF_0xD3sVTrDmVPVKblNRJkGeQl7FM9dSp4VbPJiS7E.jpg" alt="MONKART">
+          </div>
+    <p><strong><!--<a href="/title/81193245/">-->MONKART<!--</a>--></strong></p>
+    <p>Jin and his dragon monster Draka set out on a racing adventure and try to save the kingdom from evil forces.</p>
+        <p class="text-muted">
+        <span>Cars, Trucks & Trains</span>
+        <span class="mx-2">&middot;</span>
+        <span>Creatures</span>
+        <span class="mx-2">&middot;</span>
+        <span>Korean</span>
+        </p>
+  </div>
+</div><div class="row">  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81172723-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81172723-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/81172723-us.jpg" alt="New Money">
+      </picture>-->
+      <img class="poster-large" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABSd39VPrEyW_nlr9iXVHOfixiTXClBFpRtxPxL409c0wc8mfcLiWLyetNCoaAKYxs1xjJV6-8yHDKstF91GFWferWG3I.jpg" alt="New Money">
+          </div>
+    <p><strong><!--<a href="/title/81172723/">-->New Money<!--</a>--></strong></p>
+    <p>An aspiring fashion designer's life is transformed after she discovers she’s the heiress of a billion-dollar empire left by her estranged father.</p>
+        <p class="text-muted">
+        <span>Drama</span>
+        <span class="mx-2">&middot;</span>
+        <span>Nollywood</span>
+        <span class="mx-2">&middot;</span>
+        <span>Rags to Riches</span>
+        </p>
+  </div>
+  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80990336-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80990336-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/80990336-us.jpg" alt="Seventeen">
+      </picture>-->
+      <img class="poster-large" src="img/AAAABfqq0M4Aygqk34GyINnN-CcdOYJ1rrmWqC9WK3RYX078UcxVIXIdQsG2y7482ZkfQ3f54Dwn86JldswcemUQqB2Oy7ydUR-BmLH1EbQpi_EoROin07CnWK2uiqNthw.jpg" alt="Seventeen">
+          </div>
+    <p><strong><!--<a href="/title/80990336/">-->Seventeen<!--</a>--></strong></p>
+    <p>To find his therapy dog, a 17-year-old escapes from juvie and embarks on a journey of reconnection with his brother and grandmother through Cantabria.</p>
+        <p class="text-muted">
+        <span>Dramedy</span>
+        <span class="mx-2">&middot;</span>
+        <span>Dysfunctional Family</span>
+        <span class="mx-2">&middot;</span>
+        <span>Road Trip</span>
+        </p>
+  </div>
+</div><div class="row">  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81094271-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81094271-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/81094271-us.jpg" alt="Spirit Riding Free: Pony Tales">
+      </picture>-->
+      <img class="poster-large" src="img/AAAABW1HPGYXwQealgfbqTsT8A1tt0EnE7r0IadigyMwHqbeJH1WwAW4aZ7zRT0_m0iHv79W4mV3N0aVUEehDBGw_ar7BpY84FMa6J20ZLGB5a6-LD3GQRvDQQYtk5nH5g.jpg" alt="Spirit Riding Free: Pony Tales">
+            <div class="rating-container-large small"><span class="font-weight-bold">New Season</span></div>
+          </div>
+    <p><strong><!--<a href="/title/81094271/">-->Spirit Riding Free: Pony Tales<!--</a>--></strong></p>
+    <p>Find the fun and adventure of "Spirit Riding Free" in this mix of music videos and short episodes featuring Lucky and all of her friends!</p>
+        <p class="text-muted">
+        <span>Gal Pals</span>
+        <span class="mx-2">&middot;</span>
+        <span>Horses</span>
+        <span class="mx-2">&middot;</span>
+        <span>Western</span>
+        </p>
+  </div>
+  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81172909-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81172909-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/81172909-us.jpg" alt="Tatu">
+      </picture>-->
+      <img class="poster-large" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABacx1MuYE-TnJzI80UqRNgW6DLHt7LEoPCU5nyvLm2DfzwCmj-j0FWAsXtL7hrdN8LO3vEFQiv60-XT3cdTJpYLBxYMo.jpg" alt="Tatu">
+          </div>
+    <p><strong><!--<a href="/title/81172909/">-->Tatu<!--</a>--></strong></p>
+    <p>Doubting her future as a nun, a woman attempts to have a child, triggering a mystic tribal prophecy that could force her to make a godly sacrifice.</p>
+        <p class="text-muted">
+        <span>Action & Adventure</span>
+        <span class="mx-2">&middot;</span>
+        <span>Nollywood</span>
+        <span class="mx-2">&middot;</span>
+        <span>Ominous</span>
+        </p>
+  </div>
+</div><div class="row">  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80214706-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80214706-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/80214706-us.jpg" alt="Tell Me Who I Am">
+      </picture>-->
+      <img class="poster-large" src="img/AAAABVBz19sNcvo5aAG8FR9avRHFdXJfYPQA9k2MvNpNnjD2jadzNHDEMHlmbarf-hSq127h7miR9q-z0FRDEnuRxpW64-QI-NuwTO4ntiM3YsclOU9sSrC0uGCoj4VZAA.jpg" alt="Tell Me Who I Am">
+          </div>
+    <p><strong><!--<a href="/title/80214706/">-->Tell Me Who I Am<!--</a>--></strong></p>
+    <p>In this documentary, Alex trusts his twin, Marcus, to tell him about his past after he loses his memory. But Marcus is hiding a dark family secret.</p>
+        <p class="text-muted">
+        <span>Amnesia</span>
+        <span class="mx-2">&middot;</span>
+        <span>Keeping Secrets</span>
+        <span class="mx-2">&middot;</span>
+        <span>Provocative</span>
+        </p>
+  </div>
+  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80994011-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80994011-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/80994011-us.jpg" alt="The Laundromat">
+      </picture>-->
+      <img class="poster-large" src="img/AAAABfad8fTIwtJJ_BII1CyLvytg9gWvwNWTsy4NAy8oZaikcs5o0XnePpRCU1IqEycsOUb4Fw79eeuPHUI2eTAL8fIKjPVp7HvzNetSU_Mwhl0_QQHh352ZubmHuOCEzw.jpg" alt="The Laundromat">
+          </div>
+    <p><strong><!--<a href="/title/80994011/">-->The Laundromat<!--</a>--></strong></p>
+    <p>When a widow gets swindled out of insurance money, her search for answers leads to two cunning lawyers in Panama who hide cash for the superrich.</p>
+        <p class="text-muted">
+        <span>Based on Real Life</span>
+        <span class="mx-2">&middot;</span>
+        <span>Dark Comedy</span>
+        <span class="mx-2">&middot;</span>
+        <span>Dramedy</span>
+        </p>
+  </div>
+</div><div class="row">  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81086462-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81086462-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/81086462-us.jpg" alt="The Yard">
+      </picture>-->
+      <img class="poster-large" src="img/AAAABbm2HJOtPzWmRovcz-R9c2XHRjWQGQqfIDjml_lq1lJ3z2gJoQWVUiFsHfwgmsMVAAQhWsCv-Q9IHUp8jW2DdI4egr0aS3Qc9y6JBPakE_44YSUrxTwZfPqpUT5gyQ.jpg" alt="The Yard">
+          </div>
+    <p><strong><!--<a href="/title/81086462/">-->The Yard<!--</a>--></strong></p>
+    <p>After a fateful domestic clash, a devoted mother finds herself in prison and fighting to survive in hopes of reuniting with her daughter.</p>
+        <p class="text-muted">
+        <span>Fight the System</span>
+        <span class="mx-2">&middot;</span>
+        <span>Prison</span>
+        <span class="mx-2">&middot;</span>
+        <span>Turkish</span>
+        </p>
+  </div>
+  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81064730-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81064730-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/81064730-us.jpg" alt="Toon">
+      </picture>-->
+      <img class="poster-large" src="img/AAAABR_sE40zdhG_WNskYBHc_cdfxQgkX1svjjWlTK5P9YvC10VxH005t9Xa0hyB6N5a0RBaAjEb9drWVz4bfrCwvh1hfDWTSetzOMNd5umzfHbmmvsb6zmzO-Z42OIBXw.jpg" alt="Toon">
+          </div>
+    <p><strong><!--<a href="/title/81064730/">-->Toon<!--</a>--></strong></p>
+    <p>Reclusive, socially awkward jingle composer Toon must navigate the nightmarish world of show biz after a viral video skyrockets him to fame.</p>
+        <p class="text-muted">
+        <span>Deadpan</span>
+        <span class="mx-2">&middot;</span>
+        <span>Showbiz</span>
+        <span class="mx-2">&middot;</span>
+        <span>Sitcom</span>
+        </p>
+  </div>
+</div><div class="row">  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80208910-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80208910-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/80208910-us.jpg" alt="Unnatural Selection">
+      </picture>-->
+      <img class="poster-large" src="img/AAAABVhENvhed-o735MU2nAEZyU3LHB_Jk59L_XHby8nGwmJt-X2g75KphVhXMEgezirfZuGip3a_Cm2mYTbL7Hn6GlPjfhLH_5Kw8-rwQdSY2z05GjZW81BTkiE7jdoig.jpg" alt="Unnatural Selection">
+          </div>
+    <p><strong><!--<a href="/title/80208910/">-->Unnatural Selection<!--</a>--></strong></p>
+    <p>From eradicating disease to selecting a child’s traits, gene editing gives humans the chance to hack biology. Meet the real people behind the science.</p>
+        <p class="text-muted">
+        <span>Business</span>
+        <span class="mx-2">&middot;</span>
+        <span>Controversial</span>
+        <span class="mx-2">&middot;</span>
+        <span>Docuseries</span>
+        </p>
+  </div>
+  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80998890-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80998890-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/80998890-us.jpg" alt="Upstarts">
+      </picture>-->
+      <img class="poster-large" src="img/AAAABV_21Lzeg5x4gmvmS2VDWxkeOtGUpUF1kuS-BeL3NAgsnMd8ck_HpNQ9FM9AjFsj-M6_QUC-6stsjxdrQ59Yk7V5nkngFijz9lfBPkG3BrGseyLcdw76USKGib0f_w.jpg" alt="Upstarts">
+          </div>
+    <p><strong><!--<a href="/title/80998890/">-->Upstarts<!--</a>--></strong></p>
+    <p>Hoping to do good while making millions, three college graduates create a startup. But as business begins to flourish, their own bond starts to fray.</p>
+        <p class="text-muted">
+        <span>Drama</span>
+        <span class="mx-2">&middot;</span>
+        <span>Indian</span>
+        <span class="mx-2">&middot;</span>
+        <span>Understated</span>
+        </p>
+  </div>
+</div>          <div class="row">
+            <div class="col-12 mb-2">
+              <h2>
+              October 19              </h2>
+            </div>
+          </div>
+          <div class="row">  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81034575-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81034575-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/81034575-us.jpg" alt="Kursk">
+      </picture>-->
+      <img class="poster-large" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABRSgMwk03Dwrdfcp_gOzZ-NMuzApFSbic9LNPNUXUIWIj-rCGfj1Vt5yNSuei9RKaab3f2LVe9scCVsx-iQprNDknuJl.jpg" alt="Kursk">
+          </div>
+    <p><strong><!--<a href="/title/81034575/">-->Kursk<!--</a>--></strong></p>
+    <p>For the crew trapped aboard a sunken Russian submarine the deadliest threat is the bureaucracy on land. Based on a true story.</p>
+        <p class="text-muted">
+        <span>Belgian</span>
+        <span class="mx-2">&middot;</span>
+        <span>Military</span>
+        <span class="mx-2">&middot;</span>
+        <span>Thriller</span>
+        </p>
+  </div>
+          </div>
+                    <div class="row">
+            <div class="col-12 mb-2">
+              <h2>
+              October 21              </h2>
+            </div>
+          </div>
+          <div class="row">  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80091310-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80091310-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/80091310-us.jpg" alt="Free Fire">
+      </picture>-->
+      <img class="poster-large" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABRXv4EzC9J5VsM1L17cNp0zqbnsb68S2ORapw8GvmFSscJQgEQn4S25C0hZpoxU2w6sB6Qa5oPOXf7PYwck4FvcPu2nW.jpg" alt="Free Fire">
+          </div>
+    <p><strong><!--<a href="/title/80091310/">-->Free Fire<!--</a>--></strong></p>
+    <p>A sketchy arms transaction in a deserted warehouse turns into a free-for-all when the two sides engage in a take-no-prisoners shootout.</p>
+        <p class="text-muted">
+        <span>1970s</span>
+        <span class="mx-2">&middot;</span>
+        <span>Dark Comedy</span>
+        <span class="mx-2">&middot;</span>
+        <span>Vintage Crime</span>
+        </p>
+  </div>
+          </div>
+                    <div class="row">
+            <div class="col-12 mb-2">
+              <h2>
+              October 22              </h2>
+            </div>
+          </div>
+          <div class="row">  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/70295169-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/70295169-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/70295169-us.jpg" alt="Hunter's Prayer">
+      </picture>-->
+      <img class="poster-large" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABafuNFQoTZp54TxAIN7ADY3qu87SOv1r1_w-9zpmZlRwpjdoLmtszaeF2d1tWQgbuLaSerCKiqMRjJ-8t1s7hb_akJWO.jpg" alt="Hunter's Prayer">
+          </div>
+    <p><strong><!--<a href="/title/70295169/">-->Hunter's Prayer<!--</a>--></strong></p>
+    <p>A hired gun has second thoughts when he's contracted to kill a teenage girl whose father's shady business dealings put her life in danger.</p>
+        <p class="text-muted">
+        <span>Action Thriller</span>
+        <span class="mx-2">&middot;</span>
+        <span>Independent</span>
+        <span class="mx-2">&middot;</span>
+        <span>Revenge</span>
+        </p>
+  </div>
+  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81027753-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81027753-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/81027753-us.jpg" alt="Jenny Slate: Stage Fright">
+      </picture>-->
+      <img class="poster-large" src="img/AAAABcG8imgcpey9uusHFrqpsR2FdIuCl3Pr3hrY9L5dhuIbpmzzpENqzmGHTSYLBHzsCwuMi8kKZikeWfTQjx08Lkp5tjUBxCeElF12X5AT0f826FPQe4u1M4ul6iK_7g.jpg" alt="Jenny Slate: Stage Fright">
+          </div>
+    <p><strong><!--<a href="/title/81027753/">-->Jenny Slate: Stage Fright<!--</a>--></strong></p>
+    <p>Jenny Slate's first stand-up special is a mix of stage time, funny stories about adulthood and conversations with family in her childhood home.</p>
+        <p class="text-muted">
+        <span>Ghosts</span>
+        <span class="mx-2">&middot;</span>
+        <span>Quirky</span>
+        <span class="mx-2">&middot;</span>
+        <span>Stand-Up</span>
+        </p>
+  </div>
+</div>          <div class="row">
+            <div class="col-12 mb-2">
+              <h2>
+              October 23              </h2>
+            </div>
+          </div>
+          <div class="row">  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81038022-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81038022-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/81038022-us.jpg" alt="Breakfast, Lunch & Dinner">
+      </picture>-->
+      <img class="poster-large" src="img/AAAABb11cd_-i6v_I4mP1DDoan2n7ntAc75efuLR6QDMtlTfq64OMNVo4GbgBL5KUjOenkjcSPHx9sorUtZeBF3XBGfTaTFgxCIn9mtsEtyK63B4q-zR472V1zcyD0UxRw.jpg" alt="Breakfast, Lunch & Dinner">
+          </div>
+    <p><strong><!--<a href="/title/81038022/">-->Breakfast, Lunch & Dinner<!--</a>--></strong></p>
+    <p>Chef David Chang takes his insatiable curiosity about food, culture and identity on the road, in the convivial company of fun-loving celebrity guests.</p>
+        <p class="text-muted">
+        <span>Docuseries</span>
+        <span class="mx-2">&middot;</span>
+        <span>Showbiz</span>
+        <span class="mx-2">&middot;</span>
+        <span>Travel & Adventure</span>
+        </p>
+  </div>
+  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81071891-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81071891-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/81071891-us.jpg" alt="Master Z: The Ip Man Legacy">
+      </picture>-->
+      <img class="poster-large" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABWiUJxQ-5FkW5eB64GxS8uvAOgHLzXEe5kefKFDhhdRyRAsakkcbMzfnKP_ic-RpFKzg9Htr7UIj2ce-aPiEYWbR8BfZ.jpg" alt="Master Z: The Ip Man Legacy">
+          </div>
+    <p><strong><!--<a href="/title/81071891/">-->Master Z: The Ip Man Legacy<!--</a>--></strong></p>
+    <p>In this spin-off, a martial arts expert once defeated by Ip Man is forced to abandon his reclusive lifestyle to combat a rising Chinese triad.</p>
+        <p class="text-muted">
+        <span>Drug Lord</span>
+        <span class="mx-2">&middot;</span>
+        <span>Family Relationship</span>
+        <span class="mx-2">&middot;</span>
+        <span>Hong Kong</span>
+        </p>
+  </div>
+</div>          <div class="row">
+            <div class="col-12 mb-2">
+              <h2>
+              October 24              </h2>
+            </div>
+          </div>
+          <div class="row">  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80197462-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/80197462-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/80197462-us.jpg" alt="Daybreak">
+      </picture>-->
+      <img class="poster-large" src="img/AAAABdLMXmkUN4MyCj1Az6C4AcTVZghGzbVPpps0OtpTlthLhyXtjURE3lXk4KfNQqYoY3iIZ_fP-04-HTr6mZF_XGrRserE5G1KApu_5KULI9hLlo9zSukkZ3Rqyi4z3Q.jpg" alt="Daybreak">
+          </div>
+    <p><strong><!--<a href="/title/80197462/">-->Daybreak<!--</a>--></strong></p>
+    <p>Living his best life in post-apocalyptic LA, a slacker strives to find the girl of his dreams while outwitting mindless ghouls and cliquish gangs.</p>
+        <p class="text-muted">
+        <span>Action</span>
+        <span class="mx-2">&middot;</span>
+        <span>Graphic Novel</span>
+        <span class="mx-2">&middot;</span>
+        <span>Teen</span>
+        </p>
+  </div>
+  <div class="col-sm-6">
+    <div class="poster-container-large">
+      <!--<picture>
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81075461-us.webp" type="image/webp">
+        <source srcset="https://flixable.b-cdn.net/coming-soon/81075461-us.jpg" type="image/jpeg">
+        <img class="poster-large" src="https://flixable.b-cdn.net/coming-soon/81075461-us.jpg" alt="Revenge of the Pontianak">
+      </picture>-->
+      <img class="poster-large" src="dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABeV6HmiDgmGQh6CLug754JaTuHs8lpALSMyI2YmC5vmHw94M5HhGzmH3VTTmHiJrd1GtDZTrNF49AGPyx2ZpmuGWMacG.jpg" alt="Revenge of the Pontianak">
+          </div>
+    <p><strong><!--<a href="/title/81075461/">-->Revenge of the Pontianak<!--</a>--></strong></p>
+    <p>A wedding in a Malaysian village leaves out one guest: a scorned vampire ghost bent on settling a secret score with the groom and anyone in her way.</p>
+        <p class="text-muted">
+        <span>1960s</span>
+        <span class="mx-2">&middot;</span>
+        <span>Ghosts</span>
+        <span class="mx-2">&middot;</span>
+        <span>Urban Legend</span>
+        </p>
+  </div>
+</div>              <div class="row justify-content-center text-center">
+             <div class="col mb-2">
+               <script async src="pagead/js/adsbygoogle.js"></script>
+               <!-- Flixable - Responsive -->
+               <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-7234786419871369"
+                 data-ad-slot="1479555091"
+data-ad-format="auto"
+data-full-width-responsive="true">
+</ins>
+               <script>
+               (adsbygoogle = window.adsbygoogle || []).push({});
+               </script>
+             </div>
+           </div>        <hr>
+      </div> <!-- /container -->
+    </main>
+    <footer class="container">
+      <div class="row mb-3">
+        <div class="col-4">&copy; 2019 <a href="index.html">Flixable</a></div>
+        <div class="col-8 text-right">
+          <a href="index.html">About Us</a>
+          <span class="mx-1">|</span>
+          <a href="index.html">Contact Us</a>
+          <span class="mx-1">|</span>
+          <a href="index.html">Privacy Policy</a>
+          <span class="mx-1">|</span>
+          <a href="index.html">Other Countries</a>
+        </div>
+      </div>
+    </footer>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="ajax/libs/popper-js/1-12-9/umd/popper.min.js"></script>
+    <script src="bootstrap/4-3-1/js/bootstrap.min.js"></script>
+    <script src="ajax/libs/bootstrap-slider/10-0-0/bootstrap-slider.min.js"></script>
+            <script src="typeahead.bundle.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      var titles = new Bloodhound({
+        datumTokenizer: Bloodhound.tokenizers.whitespace,
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        remote: {
+          url: '/search.php?country=us&query=%QUERY',
+          wildcard: '%QUERY'
+        }
+      });
+      $("input.typeahead").typeahead(null, {
+        name: 'search',
+        display: 'title',
+        source: titles,
+        templates: {
+          suggestion: function(data){
+            return '<a href="/title/' + data.id + '/">' + data.title + '</a>';
+          }
+        }
+      });
+      $(window).on("hashchange", function(){
+        if(location.hash === '#submitContainer'){
+                    window.scrollBy(0, -27);
+                  }
+        else if(location.hash === '#filterContainer'){
+          window.scrollBy(0, -63);
+        }
+      }).trigger("hashchange");
+      var pathname = window.location.pathname;
+      $(".navbar-nav > li > a[href=\"" + pathname + "\"]").parent().addClass("active");
+      $(document).click(function(event){
+        if(event.isTrigger){
+          return;
+        }
+        if(!$(".search-form").is(event.target) && $(".search-form").has(event.target).length == 0 && !$(".search-input").hasClass("d-none")){
+          $(".search-button").click();
+        }
+        if(!$(".navbar").is(event.target) && ($(".navbar").has(event.target).length == 0 || $(".search-form").has(event.target).length > 0) && $(".navbar-collapse").hasClass("collapse show")){
+          $(".navbar-toggler").click();
+        }
+      });
+      $(".search-button").click(function(event){
+        if(event.isTrigger || $(".search-input").hasClass("d-none") || $(".tt-input").val() == ''){
+          event.preventDefault();
+        }
+        else{
+          return;
+        }
+        $(".search-input").toggleClass("d-none");
+        $(".search-button").toggleClass("search-button-expanded");
+        if(!$(".search-input").hasClass("d-none")){
+                    $(".search-input").css("width", "auto");
+                    $(".search-input").focus();
+        }
+        else{
+          $(this).blur();
+        }
+      });
+            $("#amazon").click(function(){
+        event.preventDefault();
+        $.post("/scripts/save.php", {mode: 4});
+        var url = $(this).prop("href");
+        window.open(url, "_blank");
+      });
+                  $(".my-list").click(function(event){
+        event.preventDefault();
+        $.post("/scripts/save.php", {mode: 0});
+        $("#loginModal").modal();
+        $.post("/scripts/session.php", {url: "/my-list/"});
+      });
+      $("#facebookButton").click(function(){
+        $.post("/scripts/save.php", {mode: 2});
+      });
+      $("#googleButton").click(function(){
+        $.post("/scripts/save.php", {mode: 3});
+      });
+      $("#register").click(function(){
+        $.post("/scripts/save.php", {mode: 1});
+      });
+                  $(".read-more").click(function(){
+        $(this).toggleClass("read-more");
+        if($(this).hasClass("read-more")){
+          $(this).text("Read More...");
+        }
+        else{
+          $(this).text("Read Less...");
+        }
+      });
+                                        });
+            </script>
+  </body>
+</html>

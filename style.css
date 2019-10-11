@@ -1,0 +1,325 @@
+@font-face {
+  font-family: "icons";
+  src: url("fonts/icons.woff") format("woff2"),
+       url("fonts/icons.woff") format("woff");
+}
+@media (max-width: 991.98px) {
+  .navbar-brand {
+    margin-left: 1rem !important;
+  }
+}
+@media (max-width: 575.98px) {
+  a.list:hover {
+    background-color: transparent !important;
+    color: #007bff !important;
+  }
+  .btn {
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+  #sliderContainer {
+    margin-bottom: 1.5rem !important;
+  }
+  #submitContainer {
+    text-align: left !important;
+  }
+}
+a.poster-link, a.poster-link:hover, a.poster-link:visited {
+  color: #212529;
+  text-transform: none;
+}
+blockquote {
+  font-size: 1rem !important;
+}
+body {
+  padding-top: 3.5rem;
+}
+#facebookButton {
+  background: #4267b2;
+  border-radius: 1px;
+  display: inline-block;
+  padding: 1px;
+  text-align: center;
+  width: 240px;
+}
+#facebookButton:hover {
+  cursor: pointer;
+}
+#facebookButton span.icon {
+  background: url("img/facebook.svg") transparent center no-repeat;
+  display: block;
+  float: left;
+  height: 48px;
+  width: 48px;
+}
+#facebookButton span.text {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 48px;
+}
+.facebook-login-button, .facebook-login-button:active, .facebook-login-button:focus, .facebook-login-button:hover {
+  background-color: #4267b2 !important;
+  border-color: #4267b2 !important;
+}
+.flag {
+  max-width: 200px;
+  width: 100%;
+}
+footer.container {
+  font-size: 85%;
+}
+#googleButton {
+  background: #4285F4;
+  border-radius: 1px;
+  display: inline-block;
+  padding: 1px;
+  text-align: center;
+  width: 240px;
+}
+#googleButton:hover {
+  cursor: pointer;
+}
+#googleButton span.icon {
+  background: url("img/google.svg") white center no-repeat;
+  display: block;
+  float: left;
+  height: 48px;
+  width: 48px;
+}
+#googleButton span.text {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 48px;
+}
+.icon {
+  font-family: "icons";
+}
+.navbar {
+  background-color: rgba(0, 0, 0, 1) !important;
+}
+.imdbRatingPlugin {
+  border: none !important;
+  display: flex !important;
+  height: 22px;
+  line-height: 22px;
+}
+.navbar-brand {
+  line-height: 28px;
+  margin: 2px 0 4px;
+}
+.nav-link {
+  padding-bottom: 10px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #e9ecef;
+}
+.plugin a img {
+  background-image: url("img/imdb.svg");
+  background-size: cover;
+  box-sizing: border-box;
+  height: 22px;
+  margin-right: 5px;
+  padding-left: 45px;
+  vertical-align: baseline !important;
+  width: 45px;
+}
+.plugin span {
+  color: inherit !important;
+  font-family: inherit;
+  font-size: inherit !important;
+  font-weight: inherit;
+  margin: 0;
+  padding: 0;
+}
+.poster {
+  max-width: 342px;
+  width: 100%;
+}
+.poster-large {
+  max-width: 665px;
+  width: 100%;
+}
+.poster-container {
+  position: relative;
+  max-width: 342px;
+  width: 100%;
+}
+.poster-container-large {
+  position: relative;
+  max-width: 665px;
+  width: 100%;
+}
+.poster-container:hover .overlay {
+  opacity: 0.9;
+}
+.rating-container {
+  background-color: #f5de50;
+  line-height: 13px;
+  opacity: 0.9;
+  padding: 3px 6px;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0;
+}
+.rating-container-large {
+  background-color: #f5de50;
+  line-height: 13px;
+  opacity: 0.9;
+  padding: 3px 6px;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0;
+}
+.rate {
+  color: #e6b91e;
+  cursor: pointer;
+}
+.rated {
+  color: #e6b91e;
+}
+.search-button, .search-button:hover {
+  background-color: transparent !important;
+  border-color: transparent;
+}
+.search-button-expanded, .search-button-expanded:hover {
+  background-color: #dc3545 !important;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.search-input {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.slider {
+  display: inline-block;
+  /* Standard */
+  width: calc(100% - 100px) !important;
+  /* Firefox */
+  width: -moz-calc(100% - 100px) !important;
+  /* Opera */
+  width: -o-calc(100% - 100px) !important;
+  /* WebKit */
+  width: -webkit-calc(100% - 100px) !important;
+}
+.slider-handle {
+  background-color: #007bff;
+  background-image: none;
+  cursor: pointer;
+}
+#social {
+  height: 20px;
+  width: 100%;
+}
+#social .fb-like {
+  float: left;
+  line-height: 20px;
+  margin-right: 6px;
+}
+#social .twitter-share-button {
+  float: left;
+  line-height: 20px;
+}
+span.page-link:hover {
+  background-color: #fff;
+  color: #007bff;
+}
+.star {
+  display: none;
+  visibility: hidden;
+}
+.star-rating-container {
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  position: relative;
+}
+.star-rating-container:before{
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-weight: 400;
+}
+.star-rating-container .star-rating {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+.star-rating-container .star-rating:before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-weight: 900;
+}
+#submitContainer {
+  text-align: right;
+}
+.tmdb-logo {
+  height: 22px;
+  margin-right: 5px;
+  width: 20px;
+}
+.tmdb-rating {
+  align-items: center;
+  display: flex;
+  height: 22px;
+  line-height: 22px;
+}
+.tt-hint {
+  color: #999;
+}
+.tt-menu {
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  margin: 6px 0;
+  padding: 6px 0;
+  width: 100%;
+}
+.tt-suggestion {
+  color: inherit;
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  width: 100%;
+}
+.tt-suggestion:hover {
+  background-color: #0097cf;
+  color: #fff;
+  text-decoration: none;
+}
+.twitter-typeahead {
+  display: block !important;
+  position: absolute !important;
+  right: 42px;
+}
+#website {
+  display: none;
+  visibility: hidden;
+}
+#yearStart {
+  display: inline-block;
+  float: left;
+  width: 50px;
+}
+#yearEnd {
+  display: inline-block;
+  float: right;
+  width: 50px;
+}
